@@ -32,7 +32,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology Open Source components.</description>
     <organization>
@@ -58,7 +58,7 @@
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/open-source-parent.git</connection>
         <developerConnection>scm:git:git@github.com:basis-technology-corp/open-source-parent.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>open-source-parent-0.0.3</tag>
     </scm>
     <properties>
         <maven.version>3.0.4</maven.version>
