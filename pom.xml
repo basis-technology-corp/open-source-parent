@@ -60,6 +60,14 @@
         <developerConnection>scm:git:git@github.com:basis-technology-corp/open-source-parent.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
+    <developers>
+      <developer>
+        <name>Benson Margulies</name>
+        <email>benson@basistech.com</email>
+      <organization>Basis Technology Corp.</organization>
+      <organizationUrl>http://www.basistech.com</organizationUrl>
+      </developer>
+    </developers>
     <properties>
         <maven.version>3.0.4</maven.version>
     </properties>
