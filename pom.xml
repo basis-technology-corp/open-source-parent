@@ -131,10 +131,6 @@
                                 <Implementation-Version>${project.version}</Implementation-Version>
                             </manifestEntries>
                         </archive>
-                        <instructions>
-                            <Export-Package>com.basistech.tclre</Export-Package>
-                            <Embed-Dependency>fastutil</Embed-Dependency>
-                        </instructions>
                     </configuration>
                 </plugin>
                 <plugin>
