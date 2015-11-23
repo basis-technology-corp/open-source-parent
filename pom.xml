@@ -32,9 +32,9 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>0.0.6-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <description>Parent POM for Basis Technology Open Source components.</description>
+    <description>Parent POM for Basis Technology open source components.</description>
     <organization>
         <name>Basis Technology Corp.</name>
         <url>http://www.basistech.com</url>
@@ -44,9 +44,6 @@
         <artifactId>progressive-organization-pom</artifactId>
         <version>1.5.1</version>
     </parent>
-    <prerequisites>
-        <maven>3.0.4</maven>
-    </prerequisites>
     <inceptionYear>2014</inceptionYear>
     <url>http://github.com/basis-technology-corp/open-source-parent</url>
     <distributionManagement>
@@ -69,19 +66,57 @@
       </developer>
     </developers>
     <properties>
-        <maven.version>3.0.4</maven.version>
+      <bt.java.source>1.7</bt.java.source>
+      <bt.java.target>1.7</bt.java.target>
+      <!-- Consolidating maven plugin versions here. -->
+        <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
+        <maven-assembly-plugin.version>2.5.5</maven-assembly-plugin.version>
+        <maven-bundle-plugin.version>3.0.1</maven-bundle-plugin.version>
+        <maven-checkstyle-plugin.version>2.17</maven-checkstyle-plugin.version>
+        <maven-clean-plugin.version>2.5</maven-clean-plugin.version>
+        <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
+        <maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
+        <maven-deploy-plugin.version>2.7</maven-deploy-plugin.version>
+        <maven-install-plugin.version>2.3.1</maven-install-plugin.version>
+        <maven-javadoc-plugin.version>2.9.1</maven-javadoc-plugin.version>
+        <maven-pmd-plugin.version>3.5</maven-pmd-plugin.version>
+        <maven-project-info-reports-plugin.version>2.7</maven-project-info-reports-plugin.version>
+        <maven-release-plugin.version>2.5.1</maven-release-plugin.version>
+        <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
+        <maven-shade-plugin.version>2.4</maven-shade-plugin.version>
+        <maven-site-plugin.version>3.4</maven-site-plugin.version>
+        <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
+        <maven-surefire-plugin.version>2.19</maven-surefire-plugin.version>
+        <nexus-staging-plugin-version>1.6.5</nexus-staging-plugin-version>
+        <exec-maven-plugin.version>1.2.1</exec-maven-plugin.version>
+        <maven.build.timestamp.format>yyyy.MM.dd_HH:mm:ss</maven.build.timestamp.format>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <bt-fastutil-version>6.6.0</bt-fastutil-version>
+        <bt-icu4j-version>55.1</bt-icu4j-version>
+        <bt-jackson-version>2.6.2</bt-jackson-version>
+        <bt-guava-version>16.0.1</bt-guava-version>
+        <bt-commons-io-version>2.4</bt-commons-io-version>
+        <bt-commons-lang-version>2.6</bt-commons-lang-version>
+        <bt-args4j-version>2.32</bt-args4j-version>
+        <bt-junit-version>4.12</bt-junit-version>
+        <bt-hamcrest-version>1.3</bt-hamcrest-version>
+        <bt-woodstox-version>4.0.5</bt-woodstox-version>
+        <bt-slf4j-version>1.7.5</bt-slf4j-version>
+        <bt-log4j-version>1.2.17</bt-log4j-version>
     </properties>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>${nexus-staging-plugin-version}</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>ossrh-releases</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <stagingProfileId>af82fa330d4f7</stagingProfileId>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    <autoReleaseAfterClose>false</autoReleaseAfterClose>
                 </configuration>
             </plugin>
         </plugins>
@@ -92,8 +127,8 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
                         <encoding>utf-8</encoding>
-                        <source>1.6</source>
-                        <target>1.6</target>
+                        <source>${bt.java.source}</source>
+                        <target>${bt.java.target}</target>
                         <debug>true</debug>
                         <optimize>true</optimize>
                     </configuration>
@@ -109,16 +144,8 @@
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-bundle-plugin</artifactId>
-                    <version>2.5.3</version>
+                    <version>3.0.1</version>
                     <extensions>true</extensions>
-                    <dependencies>
-                        <!-- FELIX-4556 -->
-                        <dependency>
-                            <groupId>biz.aQute.bnd</groupId>
-                            <artifactId>bndlib</artifactId>
-                            <version>2.4.0</version>
-                        </dependency>
-                    </dependencies>
                     <configuration>
                         <archive>
                             <addMavenDescriptor>false</addMavenDescriptor>
@@ -131,12 +158,21 @@
                                 <Implementation-Version>${project.version}</Implementation-Version>
                             </manifestEntries>
                         </archive>
+                        <instructions>
+                          <!-- Force consumers to respect third version component. -->
+                          <_consumer-policy>${range;[===,+)}</_consumer-policy>
+                        </instructions>
                     </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.18</version>
+                    <version>2.19</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>2.19</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -156,4 +192,132 @@
             </plugins>
         </pluginManagement>
     </build>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>it.unimi.dsi</groupId>
+                <artifactId>fastutil</artifactId>
+                <version>${bt-fastutil-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${bt-guava-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ibm.icu</groupId>
+                <artifactId>icu4j</artifactId>
+                <version>${bt-icu4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.woodstox</groupId>
+                <artifactId>woodstox-core-asl</artifactId>
+                <version>${bt-woodstox-version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>stax</groupId>
+                        <artifactId>stax-api</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${bt-jackson-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${bt-jackson-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${bt-jackson-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-smile</artifactId>
+                <version>${bt-jackson-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-csv</artifactId>
+                <version>${bt-jackson-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-xml</artifactId>
+                <version>${bt-jackson-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-yaml</artifactId>
+                <version>${bt-jackson-version}</version>
+            </dependency>
+            <dependency>
+              <groupId>com.fasterxml.jackson.datatype</groupId>
+              <artifactId>jackson-datatype-guava</artifactId>
+              <version>${bt-jackson-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${bt-log4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${bt-slf4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${bt-slf4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${bt-slf4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-jdk14</artifactId>
+                <version>${bt-slf4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>args4j</groupId>
+                <artifactId>args4j</artifactId>
+                <version>${bt-args4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${bt-commons-io-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>${bt-commons-lang-version}</version>
+            </dependency>
+             <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-core</artifactId>
+                <version>${bt-hamcrest-version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-library</artifactId>
+                <version>${bt-hamcrest-version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${bt-junit-version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
