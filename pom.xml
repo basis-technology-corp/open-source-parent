@@ -160,8 +160,10 @@
                         </archive>
                         <instructions>
                           <!-- Force consumers to respect third version component. -->
-                          <_consumer-policy>${range;[===,+)}</_consumer-policy>
+                          <_consumer-policy>$${range;[===,+)}</_consumer-policy>
                         </instructions>
+                        <dumpInstructions>${project.build.directory}/instructions.txt</dumpInstructions>
+                        <niceManifest>true</niceManifest>
                     </configuration>
                 </plugin>
                 <plugin>
