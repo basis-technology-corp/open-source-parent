@@ -54,6 +54,7 @@
     <properties>
         <bt.java.source>1.7</bt.java.source>
         <bt.java.target>1.7</bt.java.target>
+        <buildtools.version>1.0.0</buildtools.version>
         <!-- Consolidating maven plugin versions here. -->
         <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
         <maven-assembly-plugin.version>2.5.5</maven-assembly-plugin.version>
@@ -201,7 +202,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
-                    <version>${maven-surefire-plugin.version</version>
+                    <version>${maven-surefire-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -267,7 +268,7 @@
                     <dependencies>
                         <dependency>
                             <groupId>com.basistech</groupId>
-                            <artifactId>buildtools</artifactId>
+                            <artifactId>open-source-buildtools</artifactId>
                             <version>${buildtools.version}</version>
                         </dependency>
                         <dependency>
@@ -315,7 +316,7 @@
                     <dependencies>
                         <dependency>
                             <groupId>com.basistech</groupId>
-                            <artifactId>buildtools</artifactId>
+                            <artifactId>open-source-buildtools</artifactId>
                             <version>${buildtools.version}</version>
                         </dependency>
                     </dependencies>
