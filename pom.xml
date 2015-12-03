@@ -39,6 +39,7 @@
         </snapshotRepository>
     </distributionManagement>
     <scm>
+        <url>https://github.com/basis-technology-corp/open-source-parent</url>
         <connection>scm:git:git@github.com:basis-technology-corp/open-source-parent.git</connection>
         <developerConnection>scm:git:git@github.com:basis-technology-corp/open-source-parent.git</developerConnection>
         <tag>HEAD</tag>
