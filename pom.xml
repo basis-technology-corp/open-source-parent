@@ -15,20 +15,6 @@
   ~    limitations under the License.
   -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <!-- Copyright 2014 Basis Technology Corp.
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-   -->
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
@@ -58,17 +44,17 @@
         <tag>HEAD</tag>
     </scm>
     <developers>
-      <developer>
-        <name>Benson Margulies</name>
-        <email>benson@basistech.com</email>
-      <organization>Basis Technology Corp.</organization>
-      <organizationUrl>http://www.basistech.com</organizationUrl>
-      </developer>
+        <developer>
+            <name>Benson Margulies</name>
+            <email>benson@basistech.com</email>
+            <organization>Basis Technology Corp.</organization>
+            <organizationUrl>http://www.basistech.com</organizationUrl>
+        </developer>
     </developers>
     <properties>
-      <bt.java.source>1.7</bt.java.source>
-      <bt.java.target>1.7</bt.java.target>
-      <!-- Consolidating maven plugin versions here. -->
+        <bt.java.source>1.7</bt.java.source>
+        <bt.java.target>1.7</bt.java.target>
+        <!-- Consolidating maven plugin versions here. -->
         <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
         <maven-assembly-plugin.version>2.5.5</maven-assembly-plugin.version>
         <maven-bundle-plugin.version>3.0.1</maven-bundle-plugin.version>
@@ -78,6 +64,7 @@
         <maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
         <maven-deploy-plugin.version>2.7</maven-deploy-plugin.version>
         <maven-install-plugin.version>2.3.1</maven-install-plugin.version>
+        <maven-jar-plugin.version>2.6</maven-jar-plugin.version>
         <maven-javadoc-plugin.version>2.9.1</maven-javadoc-plugin.version>
         <maven-pmd-plugin.version>3.5</maven-pmd-plugin.version>
         <maven-project-info-reports-plugin.version>2.7</maven-project-info-reports-plugin.version>
@@ -135,6 +122,46 @@
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${maven-javadoc-plugin.version}</version>
+                    <configuration>
+                        <detectOfflineLinks>false</detectOfflineLinks>
+                        <encoding>utf-8</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>${maven-antrun-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>${maven-assembly-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>${maven-dependency-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>${maven-deploy-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${maven-resources-plugin.version}</version>
+                    <configuration>
+                        <encoding>UTF-8</encoding>
+                        <nonFilteredFileExtensions>
+                            <nonFilteredFileExtension>bin</nonFilteredFileExtension>
+                        </nonFilteredFileExtensions>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-scm-publish-plugin</artifactId>
                     <version>1.1</version>
                     <configuration>
@@ -159,8 +186,8 @@
                             </manifestEntries>
                         </archive>
                         <instructions>
-                          <!-- Force consumers to respect third version component. -->
-                          <_consumer-policy>$${range;[===,+)}</_consumer-policy>
+                            <!-- Force consumers to respect third version component. -->
+                            <_consumer-policy>$${range;[===,+)}</_consumer-policy>
                         </instructions>
                         <dumpInstructions>${project.build.directory}/instructions.txt</dumpInstructions>
                         <niceManifest>true</niceManifest>
@@ -169,17 +196,17 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.19</version>
+                    <version>${maven-surefire-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
-                    <version>2.19</version>
+                    <version>${maven-surefire-plugin.version</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>2.5.1</version>
+                    <version>${maven-release-plugin.version}</version>
                     <configuration>
                         <useReleaseProfile>true</useReleaseProfile>
                         <releaseProfiles>release</releaseProfiles>
@@ -190,6 +217,139 @@
                         <pushChanges>true</pushChanges>
                         <localCheckout>true</localCheckout>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>${maven-jar-plugin.version}</version>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                            </manifest>
+                            <manifestEntries>
+                                <Built-By>Basis Technology Corp.</Built-By>
+                                <Implementation-Build>${buildNumber}-${maven.build.timestamp}</Implementation-Build>
+                                <Implementation-Version>${project.version}</Implementation-Version>
+                            </manifestEntries>
+                        </archive>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>${maven-site-plugin.version}</version>
+                    <configuration>
+                        <chmod>true</chmod>
+                        <inputEncoding>UTF-8</inputEncoding>
+                        <outputEncoding>UTF-8</outputEncoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>${maven-clean-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>${maven-install-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>${exec-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <version>${maven-checkstyle-plugin.version}</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.basistech</groupId>
+                            <artifactId>buildtools</artifactId>
+                            <version>${buildtools.version}</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>com.puppycrawl.tools</groupId>
+                            <artifactId>checkstyle</artifactId>
+                            <version>6.12.1</version>
+                            <exclusions>
+                                <!-- MCHECKSTYLE-156 -->
+                                <exclusion>
+                                    <groupId>com.sun</groupId>
+                                    <artifactId>tools</artifactId>
+                                </exclusion>
+                            </exclusions>
+                        </dependency>
+                    </dependencies>
+                    <executions>
+                        <execution>
+                            <id>validate</id>
+                            <phase>validate</phase>
+                            <configuration>
+                                <!-- We are not ready for a flood of
+                                   checkstyle complaints on tests. -->
+                                <includeTestSourceDirectory>false</includeTestSourceDirectory>
+                                <includeTestResources>false</includeTestResources>
+                                <configLocation>checkstyle.xml</configLocation>
+                                <suppressionsLocation>suppressions.xml</suppressionsLocation>
+                                <suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>
+                                <encoding>UTF-8</encoding>
+                                <logViolationsToConsole>true</logViolationsToConsole>
+                                <failOnViolation>true</failOnViolation>
+                                <linkXRef>false</linkXRef>
+                                <!-- http://stackoverflow.com/a/30406454/131433 -->
+                                <sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
+                            </configuration>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-pmd-plugin</artifactId>
+                    <version>${maven-pmd-plugin.version}</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.basistech</groupId>
+                            <artifactId>buildtools</artifactId>
+                            <version>${buildtools.version}</version>
+                        </dependency>
+                    </dependencies>
+                    <configuration>
+                        <rulesets>
+                            <ruleset>pmd-ruleset.xml</ruleset>
+                        </rulesets>
+                        <sourceEncoding>UTF-8</sourceEncoding>
+                        <targetJdk>${bt.compile.source}</targetJdk>
+                        <linkXRef>false</linkXRef>
+                        <includeTests>true</includeTests>
+                        <verbose>true</verbose>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>pmd</id>
+                            <phase>pre-integration-test</phase>
+                            <goals>
+                                <!-- explicitly configure PMD goal so  that exclusions work right.. -->
+                                <goal>pmd</goal>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>${maven-project-info-reports-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-shade-plugin</artifactId>
+                    <version>${maven-shade-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -258,9 +418,9 @@
                 <version>${bt-jackson-version}</version>
             </dependency>
             <dependency>
-              <groupId>com.fasterxml.jackson.datatype</groupId>
-              <artifactId>jackson-datatype-guava</artifactId>
-              <version>${bt-jackson-version}</version>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-guava</artifactId>
+                <version>${bt-jackson-version}</version>
             </dependency>
             <dependency>
                 <groupId>log4j</groupId>
@@ -302,7 +462,7 @@
                 <artifactId>commons-lang</artifactId>
                 <version>${bt-commons-lang-version}</version>
             </dependency>
-             <dependency>
+            <dependency>
                 <groupId>org.hamcrest</groupId>
                 <artifactId>hamcrest-core</artifactId>
                 <version>${bt-hamcrest-version}</version>
@@ -322,4 +482,72 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <profiles>
+        <profile>
+            <id>sourcecheck</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <!-- NO VERSION. Take it from
+                             pluginManagement, so that children can
+                             override.-->
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>${maven-compiler-plugin.version}</version>
+                        <configuration>
+                            <showDeprecation>true</showDeprecation>
+                            <showWarnings>true</showWarnings>
+                            <compilerArgs>
+                                <arg>-Xlint:unchecked</arg>
+                                <arg>${compile.flags}</arg>
+                            </compilerArgs>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-pmd-plugin</artifactId>
+                        <version>${maven-pmd-plugin.version}</version>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>fastinstall</id>
+            <properties>
+                <maven.test.skip>true</maven.test.skip>
+                <pmd.skip>true</pmd.skip>
+                <checkstyle.skip>true</checkstyle.skip>
+                <maven.javadoc.skip>true</maven.javadoc.skip>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>${maven-source-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <phase>none</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>nochecks</id>
+            <properties>
+                <pmd.skip>true</pmd.skip>
+                <checkstyle.skip>true</checkstyle.skip>
+            </properties>
+        </profile>
+    </profiles>
 </project>
