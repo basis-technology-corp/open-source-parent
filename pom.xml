@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  ~ Copyright 2014 Basis Technology Corp.
+  ~ Copyright 2014-2016 Basis Technology Corp.
   ~
   ~    Licensed under the Apache License, Version 2.0 (the "License");
   ~    you may not use this file except in compliance with the License.
@@ -18,18 +18,19 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>0.1.3-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <organization>
         <name>Basis Technology Corp.</name>
         <url>http://www.basistech.com</url>
     </organization>
-    <parent>
-        <groupId>com.simpligility.maven</groupId>
-        <artifactId>progressive-organization-pom</artifactId>
-        <version>1.5.1</version>
-    </parent>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
     <inceptionYear>2014</inceptionYear>
     <url>http://github.com/basis-technology-corp/open-source-parent</url>
     <distributionManagement>
@@ -53,6 +54,9 @@
         </developer>
     </developers>
     <properties>
+        <maven.build.timestamp.format>yyyy.MM.dd_HH:mm:ss</maven.build.timestamp.format>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <bt.java.source>1.7</bt.java.source>
         <bt.java.target>1.7</bt.java.target>
         <buildtools.version>1.0.0</buildtools.version>
@@ -72,15 +76,15 @@
         <maven-project-info-reports-plugin.version>2.7</maven-project-info-reports-plugin.version>
         <maven-release-plugin.version>2.5.1</maven-release-plugin.version>
         <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
+        <maven.scm.version>1.9.4</maven.scm.version>
         <maven-shade-plugin.version>2.4</maven-shade-plugin.version>
-        <maven-site-plugin.version>3.4</maven-site-plugin.version>
-        <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
+        <maven-site-plugin.version>3.5</maven-site-plugin.version>
+        <maven-source-plugin.version>3.0.0</maven-source-plugin.version>
         <maven-surefire-plugin.version>2.19</maven-surefire-plugin.version>
-        <nexus-staging-plugin-version>1.6.5</nexus-staging-plugin-version>
+        <!-- other plugins -->
+        <nexus-staging-plugin-version>1.6.6</nexus-staging-plugin-version>
         <exec-maven-plugin.version>1.2.1</exec-maven-plugin.version>
-        <maven.build.timestamp.format>yyyy.MM.dd_HH:mm:ss</maven.build.timestamp.format>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- dependency versions -->
         <bt-fastutil-version>6.6.0</bt-fastutil-version>
         <bt-icu4j-version>55.1</bt-icu4j-version>
         <bt-jackson-version>2.6.2</bt-jackson-version>
@@ -96,6 +100,19 @@
     </properties>
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>${maven-source-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -161,6 +178,23 @@
                             <nonFilteredFileExtension>bin</nonFilteredFileExtension>
                         </nonFilteredFileExtensions>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-plugin</artifactId>
+                    <version>${maven.scm.version}</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.apache.maven.scm</groupId>
+                            <artifactId>maven-scm-provider-gitexe</artifactId>
+                            <version>${maven.scm.version}</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-publish-plugin</artifactId>
+                    <version>1.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -290,9 +324,7 @@
                             <id>validate</id>
                             <phase>validate</phase>
                             <configuration>
-                                <!-- We are not ready for a flood of
-                                   checkstyle complaints on tests. -->
-                                <includeTestSourceDirectory>false</includeTestSourceDirectory>
+                                <includeTestSourceDirectory>true</includeTestSourceDirectory>
                                 <includeTestResources>false</includeTestResources>
                                 <configLocation>checkstyle.xml</configLocation>
                                 <suppressionsLocation>suppressions.xml</suppressionsLocation>
@@ -485,6 +517,40 @@
         </dependencies>
     </dependencyManagement>
     <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <!-- We want to sign the artifact, the POM, and all attached artifacts -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <configuration>
+                            <encoding>${project.build.sourceEncoding}</encoding>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
         <profile>
             <id>sourcecheck</id>
             <activation>
