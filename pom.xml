@@ -88,7 +88,7 @@
         <!-- dependency versions -->
         <bt-fastutil-version>6.6.0</bt-fastutil-version>
         <bt-icu4j-version>55.1</bt-icu4j-version>
-        <bt-jackson-version>2.6.2</bt-jackson-version>
+        <bt-jackson-version>2.7.3</bt-jackson-version>
         <bt-guava-version>16.0.1</bt-guava-version>
         <bt-commons-io-version>2.4</bt-commons-io-version>
         <bt-commons-lang-version>2.6</bt-commons-lang-version>
