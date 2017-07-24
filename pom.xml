@@ -99,6 +99,7 @@
         <bt-woodstox-version>4.0.5</bt-woodstox-version>
         <bt-slf4j-version>1.7.5</bt-slf4j-version>
         <bt-log4j-version>1.2.17</bt-log4j-version>
+        <release-profile>release</release-profile>
     </properties>
     <build>
         <plugins>
@@ -242,7 +243,7 @@
                     <version>${maven-release-plugin.version}</version>
                     <configuration>
                         <useReleaseProfile>true</useReleaseProfile>
-                        <releaseProfiles>release</releaseProfiles>
+                        <releaseProfiles>${release-profile}</releaseProfiles>
                         <remoteTagging>true</remoteTagging>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <!-- turn off the site deploy. There's a maven bug that makes it break -->
