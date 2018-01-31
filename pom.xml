@@ -58,8 +58,8 @@
         <maven.build.timestamp.format>yyyy.MM.dd_HH:mm:ss</maven.build.timestamp.format>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <bt.java.source>1.7</bt.java.source>
-        <bt.java.target>1.7</bt.java.target>
+        <bt.java.source>1.8</bt.java.source>
+        <bt.java.target>1.8</bt.java.target>
         <buildtools.version>1.0.0</buildtools.version>
         <!-- Consolidating maven plugin versions here. -->
         <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
