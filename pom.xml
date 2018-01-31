@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>1.1.7-SNAPSHOT</version>
+    <version>1.2.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <name>open-source-parent</name>
@@ -265,6 +265,7 @@
                                 <Built-By>Basis Technology Corp.</Built-By>
                                 <Implementation-Build>${buildNumber}-${maven.build.timestamp}</Implementation-Build>
                                 <Implementation-Version>${project.version}</Implementation-Version>
+                                <Automatic-Module-Name>com.basistech</Automatic-Module-Name>
                             </manifestEntries>
                         </archive>
                     </configuration>
