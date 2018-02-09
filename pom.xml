@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>1.1.6-SNAPSHOT</version>
+    <version>1.1.7-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <name>open-source-parent</name>
@@ -89,7 +89,7 @@
         <!-- dependency versions -->
         <bt-fastutil-version>6.6.0</bt-fastutil-version>
         <bt-icu4j-version>55.1</bt-icu4j-version>
-        <bt-jackson-version>2.7.3</bt-jackson-version>
+        <bt-jackson-version>2.9.4</bt-jackson-version>
         <bt-guava-version>16.0.1</bt-guava-version>
         <bt-commons-io-version>2.4</bt-commons-io-version>
         <bt-commons-lang-version>2.6</bt-commons-lang-version>
