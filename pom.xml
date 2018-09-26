@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>1.1.10-SNAPSHOT</version>
+    <version>2.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <name>open-source-parent</name>
@@ -58,8 +58,8 @@
         <maven.build.timestamp.format>yyyy.MM.dd_HH:mm:ss</maven.build.timestamp.format>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <bt.java.source>1.7</bt.java.source>
-        <bt.java.target>1.7</bt.java.target>
+        <bt.java.source>1.8</bt.java.source>
+        <bt.java.target>1.8</bt.java.target>
         <buildtools.version>1.0.0</buildtools.version>
         <!-- Consolidating maven plugin versions here. -->
         <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
@@ -90,7 +90,7 @@
         <bt-fastutil-version>6.6.1</bt-fastutil-version>
         <bt-icu4j-version>59.1</bt-icu4j-version>
         <bt-jackson-version>2.9.6</bt-jackson-version>
-        <bt-guava-version>18.0</bt-guava-version>
+        <bt-guava-version>26.0-jre</bt-guava-version>
         <bt-commons-io-version>2.4</bt-commons-io-version>
         <bt-commons-lang-version>2.6</bt-commons-lang-version>
         <bt-args4j-version>2.32</bt-args4j-version>
