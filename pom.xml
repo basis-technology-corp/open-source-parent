@@ -26,6 +26,12 @@
         <name>Basis Technology Corp.</name>
         <url>http://www.basistech.com</url>
     </organization>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
     <inceptionYear>2014</inceptionYear>
     <url>http://github.com/basis-technology-corp/open-source-parent</url>
     <distributionManagement>
@@ -40,6 +46,14 @@
         <developerConnection>scm:git:git@github.com:basis-technology-corp/open-source-parent.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
+    <developers>
+        <developer>
+            <name>Katsuya Tomioka</name>
+            <email>katsuya@basistech.com</email>
+            <organization>Basis Technology Corp.</organization>
+            <organizationUrl>http://www.basistech.com</organizationUrl>
+        </developer>
+    </developers>
     <properties>
         <maven.build.timestamp.format>yyyy.MM.dd_HH:mm:ss</maven.build.timestamp.format>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
