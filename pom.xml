@@ -63,7 +63,7 @@
         <bt.java.source>1.8</bt.java.source>
         <bt.java.target>1.8</bt.java.target>
         <buildtools.artifact>open-source-buildtools</buildtools.artifact>
-        <buildtools.version>1.0.0</buildtools.version>
+        <buildtools.version>2.0.0</buildtools.version>
         <jackson-datatype-guava.group>com.fasterxml.jackson.datatype</jackson-datatype-guava.group>
         <maven-gpg-plugin.phase>verify</maven-gpg-plugin.phase>
         <nexus-staging-plugin-internal-nexus-url>http://nexus.basistech.net:8081/nexus/</nexus-staging-plugin-internal-nexus-url>
