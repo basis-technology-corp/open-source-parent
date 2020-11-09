@@ -114,6 +114,7 @@
         <bt-args4j-version>2.33</bt-args4j-version>
         <bt-commons-io-version>2.6</bt-commons-io-version>
         <bt-commons-lang-version>2.6</bt-commons-lang-version>
+        <bt-dependency-check-maven-version>6.0.3</bt-dependency-check-maven-version>
         <bt-fastutil-version>8.3.0</bt-fastutil-version>
         <bt-guava-version>26.0-jre</bt-guava-version>
         <bt-hamcrest-version>2.2</bt-hamcrest-version>
@@ -997,6 +998,29 @@
                                 <phase>verify</phase>
                             </execution>
                         </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>dependency-check</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.owasp</groupId>
+                        <artifactId>dependency-check-maven</artifactId>
+                        <version>${bt-dependency-check-maven-version}</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <format>ALL</format>
+                            <assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
