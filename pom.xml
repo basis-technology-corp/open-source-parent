@@ -114,6 +114,7 @@
         <bt-args4j-version>2.33</bt-args4j-version>
         <bt-commons-io-version>2.7</bt-commons-io-version>
         <bt-commons-lang-version>2.6</bt-commons-lang-version>
+        <bt-dependency-check-maven-version>6.0.3</bt-dependency-check-maven-version>
         <bt-fastutil-version>8.4.0</bt-fastutil-version>
         <!-- Remaining at Guava 26 until we decide what to do about
              https://groups.google.com/g/guava-announce/c/Km82fZG68Sw
@@ -977,6 +978,29 @@
                 <pmd.skip>true</pmd.skip>
                 <checkstyle.skip>true</checkstyle.skip>
             </properties>
+        </profile>
+        <profile>
+            <id>dependency-check</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.owasp</groupId>
+                        <artifactId>dependency-check-maven</artifactId>
+                        <version>${bt-dependency-check-maven-version}</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <format>ALL</format>
+                            <assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
         </profile>
     </profiles>
 </project>
