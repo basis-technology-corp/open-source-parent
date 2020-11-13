@@ -948,7 +948,9 @@
         <profile>
             <id>coverage</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <property>
+                    <name>!coverage.skip</name>
+                </property>
             </activation>
             <properties>
             </properties>
