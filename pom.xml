@@ -134,9 +134,6 @@
         <bt-slf4j-version>1.7.28</bt-slf4j-version>
         <bt-snakeyaml-version>1.25</bt-snakeyaml-version>
         <bt-stax2-api-version>4.2</bt-stax2-api-version>
-        <bt-tika-bundle-version>1.22</bt-tika-bundle-version>
-        <bt-tika-core-version>1.22</bt-tika-core-version>
-        <bt-tika-parsers-version>1.22</bt-tika-parsers-version>
         <bt-woodstox-version>4.4.1</bt-woodstox-version>
     </properties>
     <build>
@@ -749,21 +746,6 @@
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpmime</artifactId>
                 <version>${bt-httpmime-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.tika</groupId>
-                <artifactId>tika-bundle</artifactId>
-                <version>${bt-tika-bundle-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.tika</groupId>
-                <artifactId>tika-core</artifactId>
-                <version>${bt-tika-core-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.tika</groupId>
-                <artifactId>tika-parsers</artifactId>
-                <version>${bt-tika-parsers-version}</version>
             </dependency>
             <dependency>
                 <groupId>org.rauschig</groupId>
