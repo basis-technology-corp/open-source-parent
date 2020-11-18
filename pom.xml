@@ -79,7 +79,9 @@
         <!-- Consolidating maven plugin versions here. -->
         <bnd-maven-plugin.version>5.1.2</bnd-maven-plugin.version>
         <buildnumber-maven-plugin.version>1.4</buildnumber-maven-plugin.version>
+        <dependency-check-maven.version>6.0.3</dependency-check-maven.version>
         <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
+        <jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
         <maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
         <maven-bundle-plugin.version>5.1.1</maven-bundle-plugin.version>
@@ -136,9 +138,6 @@
         <bt-slf4j-version>1.7.28</bt-slf4j-version>
         <bt-snakeyaml-version>1.26</bt-snakeyaml-version>
         <bt-stax2-api-version>4.2.1</bt-stax2-api-version>
-        <bt-tika-bundle-version>1.24.1</bt-tika-bundle-version>
-        <bt-tika-core-version>1.24.1</bt-tika-core-version>
-        <bt-tika-parsers-version>1.24.1</bt-tika-parsers-version>
         <bt-woodstox-version>4.4.1</bt-woodstox-version>
     </properties>
     <build>
@@ -766,21 +765,6 @@
                 <version>${bt-httpmime-version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.tika</groupId>
-                <artifactId>tika-bundle</artifactId>
-                <version>${bt-tika-bundle-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.tika</groupId>
-                <artifactId>tika-core</artifactId>
-                <version>${bt-tika-core-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.tika</groupId>
-                <artifactId>tika-parsers</artifactId>
-                <version>${bt-tika-parsers-version}</version>
-            </dependency>
-            <dependency>
                 <groupId>org.rauschig</groupId>
                 <artifactId>jarchivelib</artifactId>
                 <version>${bt-jarchivelib-version}</version>
@@ -977,6 +961,70 @@
                 <pmd.skip>true</pmd.skip>
                 <checkstyle.skip>true</checkstyle.skip>
             </properties>
+        </profile>
+        <profile>
+            <id>coverage</id>
+            <activation>
+                <property>
+                    <name>!coverage.skip</name>
+                </property>
+            </activation>
+            <properties>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.jacoco</groupId>
+                        <artifactId>jacoco-maven-plugin</artifactId>
+                        <version>${jacoco-maven-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>default-prepare-agent</id>
+                                <goals>
+                                    <goal>prepare-agent</goal>
+                                </goals>
+                            </execution>
+                            <execution>
+                                <id>default-prepare-agent-integration</id>
+                                <goals>
+                                    <goal>prepare-agent-integration</goal>
+                                </goals>
+                            </execution>
+                            <execution>
+                                <id>default-report</id>
+                                <goals>
+                                    <goal>report</goal>
+                                    <goal>report-integration</goal>
+                                </goals>
+                                <phase>verify</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>dependency-check</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.owasp</groupId>
+                        <artifactId>dependency-check-maven</artifactId>
+                        <version>${dependency-check-maven.version}</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <format>ALL</format>
+                            <assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
         </profile>
     </profiles>
 </project>
