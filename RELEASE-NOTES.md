@@ -1,4 +1,10 @@
 # Release Notes for com.basistech:open-source-parent #
+
+# 8.0.0 #
+
+## [COMN-271](https://basistech.atlassian.net/browse/COMN-271):
+- Update `bt-common-api-version` to 37.1.0 from 37.0.1
+
 # 7.0.1 #
 ## [COMN-268](https://basistech.atlassian.net/browse/COMN-268):
 - downgrade maven-release-plugin to 2.5.3 for MRELEASE-1042
