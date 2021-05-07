@@ -1,5 +1,10 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 8.1.0 #
+
+## [COMN-273](https://basistech.atlassian.net/browse/COMN-273):
+- Update `bt-common-api-version` to 37.2.0 from 37.1.0
+
 # 8.0.0 #
 
 ## [COMN-271](https://basistech.atlassian.net/browse/COMN-271):
