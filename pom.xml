@@ -79,7 +79,7 @@
         <!-- Consolidating maven plugin versions here. -->
         <bnd-maven-plugin.version>5.1.2</bnd-maven-plugin.version>
         <buildnumber-maven-plugin.version>1.4</buildnumber-maven-plugin.version>
-        <dependency-check-maven.version>6.0.5</dependency-check-maven.version>
+        <dependency-check-maven.version>6.1.6</dependency-check-maven.version>
         <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
         <maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>
