@@ -1,5 +1,13 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 9.0.0
+
+## [COMN-274](https://basistech.atlassian.net/browse/COMN-274):
+- Update `dependency-check-maven.version` to 6.1.6 from 6.0.5
+
+## [COMN-276](https://basistech.atlassian.net/browse/COMN-276):
+- Update `bt-common-api-version` to 37.3.0 from 37.2.0
+
 # 8.1.0 #
 
 ## [COMN-273](https://basistech.atlassian.net/browse/COMN-273):
