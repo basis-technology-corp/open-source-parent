@@ -120,7 +120,7 @@
         <!-- Remaining at Guava 26 until we decide what to do about
              https://groups.google.com/g/guava-announce/c/Km82fZG68Sw
              https://github.com/google/guava/issues/3320 -->
-        <bt-guava-version>26.0-jre</bt-guava-version>
+        <bt-guava-version>29.0-jre</bt-guava-version>
         <bt-hamcrest-version>2.2</bt-hamcrest-version>
         <bt-httpasyncclient-version>4.1.4</bt-httpasyncclient-version>
         <bt-httpclient-version>4.5.12</bt-httpclient-version>
