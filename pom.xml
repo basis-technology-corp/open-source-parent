@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>9.0.1-SNAPSHOT</version>
+    <version>9.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <name>open-source-parent</name>
@@ -70,7 +70,8 @@
         <nexus-staging-plugin-internal-nexus-url>http://nexus.basistech.net:8081/nexus/</nexus-staging-plugin-internal-nexus-url>
         <nexus-staging-plugin-internal-server-id>basistech.repo</nexus-staging-plugin-internal-server-id>
         <nexus-staging-plugin-nexus-url>${nexus-staging-plugin-ossrh-nexus-url}</nexus-staging-plugin-nexus-url>
-        <nexus-staging-plugin-ossrh-nexus-url>https://oss.sonatype.org/</nexus-staging-plugin-ossrh-nexus-url>
+        <!-- Use new server.  https://issues.sonatype.org/browse/OSSRH-76389 -->
+        <nexus-staging-plugin-ossrh-nexus-url>https://s01.oss.sonatype.org/</nexus-staging-plugin-ossrh-nexus-url>
         <nexus-staging-plugin-ossrh-server-id>ossrh-releases</nexus-staging-plugin-ossrh-server-id>
         <nexus-staging-plugin-server-id>${nexus-staging-plugin-ossrh-server-id}</nexus-staging-plugin-server-id>
         <nexus-staging-plugin-skip-staging>false</nexus-staging-plugin-skip-staging>
