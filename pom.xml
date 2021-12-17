@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>2.0.3-SNAPSHOT</version>
+    <version>2.0.4-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <name>open-source-parent</name>
@@ -89,7 +89,7 @@
         <!-- dependency versions -->
         <bt-fastutil-version>6.6.1</bt-fastutil-version>
         <bt-icu4j-version>59.1</bt-icu4j-version>
-        <bt-jackson-version>2.9.6</bt-jackson-version>
+        <bt-jackson-version>2.11.1</bt-jackson-version>
         <bt-guava-version>26.0-jre</bt-guava-version>
         <bt-commons-io-version>2.4</bt-commons-io-version>
         <bt-commons-lang-version>2.6</bt-commons-lang-version>
@@ -123,7 +123,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>ossrh-releases</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>false</autoReleaseAfterClose>
                 </configuration>
             </plugin>
