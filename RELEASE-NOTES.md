@@ -10,6 +10,12 @@
   `org.apache.logging.log4j:log4j-slf4j-impl`
 - Remove `org.slf4j:slf4j-log4j12` dependency
 
+## [COMN-280](https://basistech.atlassian.net/browse/COMN-280)
+- Update lots of plugins and dependencies
+- Change Apache Commons Lang dependency from `commons-lang:commons-lang` to
+  `org.apache.commons:commons-lang3`
+- Add dependency on `org.slf4j:log4j-over-slf4j` version 1.7.32
+
 # 9.0.0
 
 ## [COMN-274](https://basistech.atlassian.net/browse/COMN-274):

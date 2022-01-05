@@ -82,62 +82,62 @@
         <buildnumber-maven-plugin.version>1.4</buildnumber-maven-plugin.version>
         <dependency-check-maven.version>6.1.6</dependency-check-maven.version>
         <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
-        <jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
+        <jacoco-maven-plugin.version>0.8.7</jacoco-maven-plugin.version>
         <maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>
         <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
-        <maven-bundle-plugin.version>5.1.1</maven-bundle-plugin.version>
-        <maven-checkstyle-plugin.version>3.1.1</maven-checkstyle-plugin.version>
+        <maven-bundle-plugin.version>5.1.4</maven-bundle-plugin.version>
+        <maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
         <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <maven-dependency-plugin.version>3.1.2</maven-dependency-plugin.version>
+        <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
         <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
         <maven-enforcer-plugin-version>3.0.0-M3</maven-enforcer-plugin-version>
-        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+        <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
         <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
         <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
-        <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
-        <maven-pmd-plugin.version>3.13.0</maven-pmd-plugin.version>
-        <maven-project-info-reports-plugin.version>3.1.0</maven-project-info-reports-plugin.version>
+        <maven-javadoc-plugin.version>3.3.1</maven-javadoc-plugin.version>
+        <maven-pmd-plugin.version>3.14.0</maven-pmd-plugin.version>
+        <maven-project-info-reports-plugin.version>3.1.2</maven-project-info-reports-plugin.version>
         <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
-        <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
+        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
         <maven-scm-plugin.version>3.0.0</maven-scm-plugin.version>
         <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
-        <maven-site-plugin.version>3.9.1</maven-site-plugin.version>
+        <maven-site-plugin.version>3.10.0</maven-site-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
-        <maven-war-plugin.version>3.3.1</maven-war-plugin.version>
+        <maven-war-plugin.version>3.3.2</maven-war-plugin.version>
         <maven.scm.version>1.11.2</maven.scm.version>
         <nexus-staging-plugin-version>1.6.8</nexus-staging-plugin-version>
-        <wagon-ssh.version>3.3.2</wagon-ssh.version>
+        <wagon-ssh.version>3.5.1</wagon-ssh.version>
         <!-- versions for dependencies -->
         <!-- things we build -->
-        <bt-adm-version>2.7.0</bt-adm-version>
+        <bt-adm-version>2.7.3</bt-adm-version>
         <bt-common-api-version>37.3.0</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.33</bt-args4j-version>
-        <bt-commons-io-version>2.7</bt-commons-io-version>
-        <bt-commons-lang-version>2.6</bt-commons-lang-version>
-        <bt-fastutil-version>8.4.0</bt-fastutil-version>
+        <bt-commons-io-version>2.11.0</bt-commons-io-version>
+        <bt-commons-lang3-version>3.12.0</bt-commons-lang3-version>
+        <bt-fastutil-version>8.5.6</bt-fastutil-version>
         <!-- Remaining at Guava 26 until we decide what to do about
              https://groups.google.com/g/guava-announce/c/Km82fZG68Sw
              https://github.com/google/guava/issues/3320 -->
         <bt-guava-version>26.0-jre</bt-guava-version>
         <bt-hamcrest-version>2.2</bt-hamcrest-version>
-        <bt-httpasyncclient-version>4.1.4</bt-httpasyncclient-version>
-        <bt-httpclient-version>4.5.12</bt-httpclient-version>
-        <bt-httpcore-version>4.4.13</bt-httpcore-version>
-        <bt-httpmime-version>4.5.12</bt-httpmime-version>
-        <bt-icu4j-version>59.1</bt-icu4j-version>
+        <bt-httpasyncclient-version>4.1.5</bt-httpasyncclient-version>
+        <bt-httpclient-version>4.5.13</bt-httpclient-version>
+        <bt-httpcore-version>4.4.15</bt-httpcore-version>
+        <bt-httpmime-version>4.5.13</bt-httpmime-version>
+        <bt-icu4j-version>70.1</bt-icu4j-version>
         <bt-jackson-version>2.11.1</bt-jackson-version>
         <bt-jarchivelib-version>0.9.100-basis</bt-jarchivelib-version>
-        <bt-junit-version>4.13.1</bt-junit-version>
+        <bt-junit-version>4.13.2</bt-junit-version>
         <bt-liblinear-version>2.30</bt-liblinear-version>
         <bt-log4j-version>2.17.1</bt-log4j-version>
-        <bt-metrics-version>3.2.3</bt-metrics-version>
-        <bt-opencsv-version>2.4</bt-opencsv-version>
+        <bt-metrics-version>4.2.7</bt-metrics-version>
+        <bt-opencsv-version>5.5.2</bt-opencsv-version>
         <bt-protobuf-version>3.12.2</bt-protobuf-version>
-        <bt-slf4j-version>1.7.28</bt-slf4j-version>
-        <bt-snakeyaml-version>1.26</bt-snakeyaml-version>
+        <bt-slf4j-version>1.7.33</bt-slf4j-version>
+        <bt-snakeyaml-version>1.30</bt-snakeyaml-version>
         <bt-stax2-api-version>4.2.1</bt-stax2-api-version>
         <bt-woodstox-version>4.4.1</bt-woodstox-version>
     </properties>
@@ -746,14 +746,19 @@
                 <version>${bt-protobuf-version}</version>
             </dependency>
             <dependency>
+                <groupId>com.opencsv</groupId>
+                <artifactId>opencsv</artifactId>
+                <version>${bt-opencsv-version}</version>
+            </dependency>
+            <dependency>
                 <groupId>de.bwaldvogel</groupId>
                 <artifactId>liblinear</artifactId>
                 <version>${bt-liblinear-version}</version>
             </dependency>
             <dependency>
-                <groupId>net.sf.opencsv</groupId>
-                <artifactId>opencsv</artifactId>
-                <version>${bt-opencsv-version}</version>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${bt-commons-lang3-version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
@@ -802,6 +807,11 @@
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
+                <artifactId>log4j-over-slf4j</artifactId>
+                <version>${bt-slf4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>${bt-slf4j-version}</version>
             </dependency>
@@ -824,11 +834,6 @@
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${bt-commons-io-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-lang</groupId>
-                <artifactId>commons-lang</artifactId>
-                <version>${bt-commons-lang-version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hamcrest</groupId>
