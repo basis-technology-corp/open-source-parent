@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  ~ Copyright 2014-2021 Basis Technology Corp.
+  ~ Copyright 2015-2022 Basis Technology Corp.
   ~
   ~    Licensed under the Apache License, Version 2.0 (the "License");
   ~    you may not use this file except in compliance with the License.
@@ -132,7 +132,7 @@
         <bt-jarchivelib-version>0.9.100-basis</bt-jarchivelib-version>
         <bt-junit-version>4.13.1</bt-junit-version>
         <bt-liblinear-version>2.30</bt-liblinear-version>
-        <bt-log4j-version>1.2.17</bt-log4j-version>
+        <bt-log4j-version>2.17.1</bt-log4j-version>
         <bt-metrics-version>3.2.3</bt-metrics-version>
         <bt-opencsv-version>2.4</bt-opencsv-version>
         <bt-protobuf-version>3.12.2</bt-protobuf-version>
@@ -630,6 +630,21 @@
                 <version>${bt-icu4j-version}</version>
             </dependency>
             <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${bt-log4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>${bt-log4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-slf4j-impl</artifactId>
+                <version>${bt-log4j-version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.codehaus.woodstox</groupId>
                 <artifactId>woodstox-core-asl</artifactId>
                 <version>${bt-woodstox-version}</version>
@@ -786,11 +801,6 @@
                 <version>${bt-snakeyaml-version}</version>
             </dependency>
             <dependency>
-                <groupId>log4j</groupId>
-                <artifactId>log4j</artifactId>
-                <version>${bt-log4j-version}</version>
-            </dependency>
-            <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>${bt-slf4j-version}</version>
@@ -798,11 +808,6 @@
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-simple</artifactId>
-                <version>${bt-slf4j-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-log4j12</artifactId>
                 <version>${bt-slf4j-version}</version>
             </dependency>
             <dependency>
