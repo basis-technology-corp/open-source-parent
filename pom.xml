@@ -115,6 +115,7 @@
         <bt-common-api-version>37.3.0</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.33</bt-args4j-version>
+        <bt-commons-compress-version>1.21</bt-commons-compress-version>
         <bt-commons-io-version>2.11.0</bt-commons-io-version>
         <bt-commons-lang3-version>3.12.0</bt-commons-lang3-version>
         <bt-fastutil-version>8.5.6</bt-fastutil-version>
@@ -754,6 +755,11 @@
                 <groupId>de.bwaldvogel</groupId>
                 <artifactId>liblinear</artifactId>
                 <version>${bt-liblinear-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-compress</artifactId>
+                <version>${bt-commons-compress-version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>

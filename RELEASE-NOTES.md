@@ -16,6 +16,9 @@
   `org.apache.commons:commons-lang3`
 - Add dependency on `org.slf4j:log4j-over-slf4j` version 1.7.32
 
+## [ROS-327](https://basistech.atlassian.net/browse/ROS-327)
+- Add a dependency on `org.apache.commons:commons-compress` version 1.21
+
 # 9.0.0
 
 ## [COMN-274](https://basistech.atlassian.net/browse/COMN-274):
