@@ -1,5 +1,24 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# Unreleased
+
+## [COMN-279](https://basistech.atlassian.net/browse/COMN-279)
+- Update `bt-log4j-version` to 2.17.1 from 1.2.17
+- Change Log4j dependencies from `log4j:log4j` to
+  `org.apache.logging.log4j:log4j-api`,
+  `org.apache.logging.log4j:log4j-core`, and
+  `org.apache.logging.log4j:log4j-slf4j-impl`
+- Remove `org.slf4j:slf4j-log4j12` dependency
+
+## [COMN-280](https://basistech.atlassian.net/browse/COMN-280)
+- Update lots of plugins and dependencies
+- Change Apache Commons Lang dependency from `commons-lang:commons-lang` to
+  `org.apache.commons:commons-lang3`
+- Add dependency on `org.slf4j:log4j-over-slf4j` version 1.7.32
+
+## [ROS-327](https://basistech.atlassian.net/browse/ROS-327)
+- Add a dependency on `org.apache.commons:commons-compress` version 1.21
+
 # 9.0.0
 
 ## [COMN-274](https://basistech.atlassian.net/browse/COMN-274):
