@@ -1,6 +1,6 @@
 # Release Notes for com.basistech:open-source-parent #
 
-# Unreleased
+# 10.0.0
 
 ## [COMN-279](https://basistech.atlassian.net/browse/COMN-279)
 - Update `bt-log4j-version` to 2.17.1 from 1.2.17
