@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>10.0.1-SNAPSHOT</version>
+    <version>11.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <name>open-source-parent</name>
@@ -59,10 +59,11 @@
         <maven.build.timestamp.format>yyyy.MM.dd_HH:mm:ss</maven.build.timestamp.format>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <bt.compile.source>1.8</bt.compile.source>
-        <bt.compile.target>1.8</bt.compile.target>
-        <bt.java.source>1.8</bt.java.source>
-        <bt.java.target>1.8</bt.java.target>
+        <bt.compile.release>11</bt.compile.release>
+        <bt.compile.source>${bt.compile.release}</bt.compile.source>
+        <bt.compile.target>${bt.compile.release}</bt.compile.target>
+        <bt.java.source>${bt.compile.release}</bt.java.source>
+        <bt.java.target>${bt.compile.release}</bt.java.target>
         <buildtools.artifact>open-source-buildtools</buildtools.artifact>
         <buildtools.version>4.0.0</buildtools.version>
         <jackson-datatype-guava.group>com.fasterxml.jackson.datatype</jackson-datatype-guava.group>
@@ -78,7 +79,7 @@
         <release-profile>release</release-profile>
         <skip-dependency-convergence>false</skip-dependency-convergence>
         <!-- Consolidating maven plugin versions here. -->
-        <bnd-maven-plugin.version>5.1.2</bnd-maven-plugin.version>
+        <bnd-maven-plugin.version>6.2.0</bnd-maven-plugin.version>
         <buildnumber-maven-plugin.version>1.4</buildnumber-maven-plugin.version>
         <dependency-check-maven.version>6.1.6</dependency-check-maven.version>
         <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
@@ -88,7 +89,7 @@
         <maven-bundle-plugin.version>5.1.4</maven-bundle-plugin.version>
         <maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
         <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
         <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
         <maven-enforcer-plugin-version>3.0.0-M3</maven-enforcer-plugin-version>
