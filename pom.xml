@@ -338,8 +338,7 @@
                     <version>${maven-compiler-plugin.version}</version>
                     <configuration>
                         <encoding>utf-8</encoding>
-                        <source>${bt.compile.source}</source>
-                        <target>${bt.compile.target}</target>
+                        <release>${bt.compile.release}</release>
                         <debug>true</debug>
                         <optimize>true</optimize>
                     </configuration>
