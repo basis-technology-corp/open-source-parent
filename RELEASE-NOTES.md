@@ -1,5 +1,12 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 11.0.0
+
+## [COMN-282](https://basistech.atlassian.net/browse/COMN-282)
+- Update `maven-enforcer-plugin` to require Java version 17
+- Add new property `bt.compile.release` to target Java version 11
+- Remove redundant properties `bt.compile.source`, `bt.compile.target`, `bt.java.source`, and `bt.java.target`
+
 # 10.0.0
 
 ## [COMN-279](https://basistech.atlassian.net/browse/COMN-279)

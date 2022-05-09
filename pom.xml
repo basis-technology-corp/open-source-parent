@@ -60,10 +60,6 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <bt.compile.release>11</bt.compile.release>
-        <bt.compile.source>${bt.compile.release}</bt.compile.source>
-        <bt.compile.target>${bt.compile.release}</bt.compile.target>
-        <bt.java.source>${bt.compile.release}</bt.java.source>
-        <bt.java.target>${bt.compile.release}</bt.java.target>
         <buildtools.artifact>open-source-buildtools</buildtools.artifact>
         <buildtools.version>4.0.0</buildtools.version>
         <jackson-datatype-guava.group>com.fasterxml.jackson.datatype</jackson-datatype-guava.group>
@@ -151,6 +147,21 @@
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <version>${maven-enforcer-plugin-version}</version>
                 <executions>
+                    <execution>
+                        <id>enforce-versions</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <phase>validate</phase>
+                        <configuration>
+                            <rules>
+                                <requireJavaVersion>
+                                    <version>[17.0.0,18.0.0)</version>
+                                </requireJavaVersion>
+                            </rules>
+                            <fail>true</fail>
+                        </configuration>
+                    </execution>
                     <execution>
                         <id>enforce-dependency-convergence</id>
                         <configuration>
