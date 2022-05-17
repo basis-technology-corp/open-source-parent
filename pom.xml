@@ -109,7 +109,7 @@
         <!-- versions for dependencies -->
         <!-- things we build -->
         <bt-adm-version>2.7.3</bt-adm-version>
-        <bt-common-api-version>37.4.0</bt-common-api-version>
+        <bt-common-api-version>37.5.0</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.33</bt-args4j-version>
         <bt-commons-compress-version>1.21</bt-commons-compress-version>

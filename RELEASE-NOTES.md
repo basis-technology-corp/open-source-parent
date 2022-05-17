@@ -2,6 +2,10 @@
 
 # 11.0.0
 
+## [COMN-284](https://basistech.atlassian.net/browse/COMN-284)
+- Update `nexus-staging-plugin-version` to 1.6.12 from 1.6.8
+- Update `bt-common-api-version` to 37.5.0 from 37.4.0
+
 ## [COMN-282](https://basistech.atlassian.net/browse/COMN-282)
 - Update `maven-enforcer-plugin` to require Java version 17
 - Add new property `bt.compile.release` to target Java version 11
