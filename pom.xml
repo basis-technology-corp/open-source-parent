@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>11.0.1-SNAPSHOT</version>
+    <version>12.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <name>open-source-parent</name>
@@ -135,7 +135,7 @@
         <bt-opencsv-version>5.5.2</bt-opencsv-version>
         <bt-protobuf-version>3.12.2</bt-protobuf-version>
         <bt-slf4j-version>1.7.33</bt-slf4j-version>
-        <bt-snakeyaml-version>1.30</bt-snakeyaml-version>
+        <bt-snakeyaml-version>1.33</bt-snakeyaml-version>
         <bt-stax2-api-version>4.2.1</bt-stax2-api-version>
         <bt-woodstox-version>4.4.1</bt-woodstox-version>
     </properties>
