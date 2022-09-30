@@ -1,5 +1,10 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 12.0.0
+
+## [COMN-286](https://basistech.atlassian.net/browse/COMN-286)
+- Update `bt-snakeyaml-version` to 1.33 from 1.30
+
 # 11.0.0
 
 ## [COMN-284](https://basistech.atlassian.net/browse/COMN-284)
