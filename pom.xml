@@ -62,7 +62,6 @@
         <bt.compile.release>11</bt.compile.release>
         <buildtools.artifact>open-source-buildtools</buildtools.artifact>
         <buildtools.version>5.0.0</buildtools.version>
-        <jackson-datatype-guava.group>com.fasterxml.jackson.datatype</jackson-datatype-guava.group>
         <maven-gpg-plugin.phase>verify</maven-gpg-plugin.phase>
         <nexus-staging-plugin-internal-nexus-url>https://nexus.basistech.net/nexus/</nexus-staging-plugin-internal-nexus-url>
         <nexus-staging-plugin-internal-server-id>basistech.repo</nexus-staging-plugin-internal-server-id>
@@ -75,47 +74,47 @@
         <release-profile>release</release-profile>
         <skip-dependency-convergence>false</skip-dependency-convergence>
         <!-- Consolidating maven plugin versions here. -->
-        <bnd-maven-plugin.version>6.2.0</bnd-maven-plugin.version>
+        <bnd-maven-plugin.version>6.3.1</bnd-maven-plugin.version>
         <buildnumber-maven-plugin.version>1.4</buildnumber-maven-plugin.version>
         <dependency-check-maven.version>6.1.6</dependency-check-maven.version>
         <exec-maven-plugin.version>3.1.0</exec-maven-plugin.version>
-        <jacoco-maven-plugin.version>0.8.7</jacoco-maven-plugin.version>
-        <maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>
-        <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
-        <maven-bundle-plugin.version>5.1.4</maven-bundle-plugin.version>
-        <maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
-        <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
+        <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
+        <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
+        <maven-assembly-plugin.version>3.4.2</maven-assembly-plugin.version>
+        <maven-bundle-plugin.version>5.1.8</maven-bundle-plugin.version>
+        <maven-checkstyle-plugin.version>3.2.0</maven-checkstyle-plugin.version>
+        <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
-        <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
-        <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
-        <maven-enforcer-plugin-version>3.0.0-M3</maven-enforcer-plugin-version>
+        <maven-dependency-plugin.version>3.3.0</maven-dependency-plugin.version>
+        <maven-deploy-plugin.version>3.0.0</maven-deploy-plugin.version>
+        <maven-enforcer-plugin-version>3.1.0</maven-enforcer-plugin-version>
         <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
-        <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
-        <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
-        <maven-javadoc-plugin.version>3.3.1</maven-javadoc-plugin.version>
-        <maven-pmd-plugin.version>3.17.0</maven-pmd-plugin.version>
-        <maven-project-info-reports-plugin.version>3.1.2</maven-project-info-reports-plugin.version>
+        <maven-install-plugin.version>3.0.1</maven-install-plugin.version>
+        <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
+        <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
+        <maven-pmd-plugin.version>3.19.0</maven-pmd-plugin.version>
+        <maven-project-info-reports-plugin.version>3.4.1</maven-project-info-reports-plugin.version>
         <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
-        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
-        <maven-scm-plugin.version>3.0.0</maven-scm-plugin.version>
-        <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
-        <maven-site-plugin.version>3.10.0</maven-site-plugin.version>
+        <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
+        <maven-scm-plugin.version>3.1.0</maven-scm-plugin.version>
+        <maven-shade-plugin.version>3.4.1</maven-shade-plugin.version>
+        <maven-site-plugin.version>3.12.1</maven-site-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-        <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
         <maven-war-plugin.version>3.3.2</maven-war-plugin.version>
-        <maven.scm.version>1.11.2</maven.scm.version>
-        <nexus-staging-plugin-version>1.6.12</nexus-staging-plugin-version>
+        <maven.scm.version>1.13.0</maven.scm.version>
+        <nexus-staging-plugin-version>1.6.13</nexus-staging-plugin-version>
         <wagon-ssh.version>3.5.1</wagon-ssh.version>
         <!-- versions for dependencies -->
         <!-- things we build -->
-        <bt-adm-version>2.7.3</bt-adm-version>
-        <bt-common-api-version>37.5.0</bt-common-api-version>
+        <bt-adm-version>2.7.4</bt-adm-version>
+        <bt-common-api-version>37.5.1</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.33</bt-args4j-version>
-        <bt-commons-compress-version>1.21</bt-commons-compress-version>
+        <bt-commons-compress-version>1.22</bt-commons-compress-version>
         <bt-commons-io-version>2.11.0</bt-commons-io-version>
         <bt-commons-lang3-version>3.12.0</bt-commons-lang3-version>
-        <bt-fastutil-version>8.5.6</bt-fastutil-version>
+        <bt-fastutil-version>8.5.9</bt-fastutil-version>
         <!-- Remaining at Guava 26 until we decide what to do about
              https://groups.google.com/g/guava-announce/c/Km82fZG68Sw
              https://github.com/google/guava/issues/3320 -->
@@ -126,15 +125,15 @@
         <bt-httpcore-version>4.4.15</bt-httpcore-version>
         <bt-httpmime-version>4.5.13</bt-httpmime-version>
         <bt-icu4j-version>70.1</bt-icu4j-version>
-        <bt-jackson-version>2.11.1</bt-jackson-version>
+        <bt-jackson-version>2.14.0</bt-jackson-version>
         <bt-jarchivelib-version>0.9.100-basis</bt-jarchivelib-version>
         <bt-junit-version>4.13.2</bt-junit-version>
         <bt-liblinear-version>2.30</bt-liblinear-version>
-        <bt-log4j-version>2.17.1</bt-log4j-version>
-        <bt-metrics-version>4.2.7</bt-metrics-version>
-        <bt-opencsv-version>5.5.2</bt-opencsv-version>
+        <bt-log4j-version>2.19.0</bt-log4j-version>
+        <bt-metrics-version>4.2.12</bt-metrics-version>
+        <bt-opencsv-version>5.7.1</bt-opencsv-version>
         <bt-protobuf-version>3.12.2</bt-protobuf-version>
-        <bt-slf4j-version>1.7.33</bt-slf4j-version>
+        <bt-slf4j-version>1.7.36</bt-slf4j-version>
         <bt-snakeyaml-version>1.33</bt-snakeyaml-version>
         <bt-stax2-api-version>4.2.1</bt-stax2-api-version>
         <bt-woodstox-version>4.4.1</bt-woodstox-version>
@@ -737,7 +736,7 @@
                 <version>${bt-jackson-version}</version>
             </dependency>
             <dependency>
-                <groupId>${jackson-datatype-guava.group}</groupId>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-guava</artifactId>
                 <version>${bt-jackson-version}</version>
             </dependency>
