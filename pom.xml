@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>0.1.2</version>
+    <version>0.1.2.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <organization>
@@ -41,7 +41,7 @@
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/open-source-parent.git</connection>
         <developerConnection>scm:git:git@github.com:basis-technology-corp/open-source-parent.git</developerConnection>
-        <tag>open-source-parent-0.1.2</tag>
+        <tag>HEAD</tag>
     </scm>
     <developers>
         <developer>
@@ -75,7 +75,7 @@
         <maven-site-plugin.version>3.4</maven-site-plugin.version>
         <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
         <maven-surefire-plugin.version>2.19</maven-surefire-plugin.version>
-        <nexus-staging-plugin-version>1.6.5</nexus-staging-plugin-version>
+        <nexus-staging-plugin-version>1.6.13</nexus-staging-plugin-version>
         <exec-maven-plugin.version>1.2.1</exec-maven-plugin.version>
         <maven.build.timestamp.format>yyyy.MM.dd_HH:mm:ss</maven.build.timestamp.format>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -102,8 +102,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>ossrh-releases</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <stagingProfileId>af82fa330d4f7</stagingProfileId>
+                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>false</autoReleaseAfterClose>
                 </configuration>
             </plugin>
