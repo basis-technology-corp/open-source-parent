@@ -5,6 +5,9 @@
 ## [COMN-286](https://basistech.atlassian.net/browse/COMN-286)
 - Update `bt-snakeyaml-version` to 1.33 from 1.30
 
+## [COMN-287](https://basistech.atlassian.net/browse/COMN-287)
+- Update lots of plugins and dependencies
+
 # 11.0.0
 
 ## [COMN-284](https://basistech.atlassian.net/browse/COMN-284)
