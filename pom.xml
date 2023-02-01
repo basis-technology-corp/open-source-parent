@@ -76,7 +76,9 @@
         <!-- Consolidating maven plugin versions here. -->
         <bnd-maven-plugin.version>6.3.1</bnd-maven-plugin.version>
         <buildnumber-maven-plugin.version>1.4</buildnumber-maven-plugin.version>
+        <cyclonedx-maven-plugin.version>2.7.4</cyclonedx-maven-plugin.version>
         <dependency-check-maven.version>6.1.6</dependency-check-maven.version>
+        <dependency-track-maven.version>1.4.0</dependency-track-maven.version>
         <exec-maven-plugin.version>3.1.0</exec-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
@@ -555,6 +557,24 @@
                             <version>${maven.scm.version}</version>
                         </dependency>
                     </dependencies>
+                </plugin>
+                <plugin>
+                    <groupId>org.cyclonedx</groupId>
+                    <artifactId>cyclonedx-maven-plugin</artifactId>
+                    <version>${cyclonedx-maven-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>makeAggregateBom</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>io.github.pmckeown</groupId>
+                    <artifactId>dependency-track-maven-plugin</artifactId>
+                    <version>${dependency-track-maven.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
