@@ -109,7 +109,7 @@
         <wagon-ssh.version>3.5.1</wagon-ssh.version>
         <!-- versions for dependencies -->
         <!-- things we build -->
-        <bt-adm-version>2.7.4</bt-adm-version>
+        <bt-adm-version>2.7.5</bt-adm-version>
         <bt-common-api-version>37.5.1</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.33</bt-args4j-version>
