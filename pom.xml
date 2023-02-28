@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>12.0.1-SNAPSHOT</version>
+    <version>13.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <name>open-source-parent</name>
@@ -76,7 +76,9 @@
         <!-- Consolidating maven plugin versions here. -->
         <bnd-maven-plugin.version>6.3.1</bnd-maven-plugin.version>
         <buildnumber-maven-plugin.version>1.4</buildnumber-maven-plugin.version>
+        <cyclonedx-maven-plugin.version>2.7.4</cyclonedx-maven-plugin.version>
         <dependency-check-maven.version>6.1.6</dependency-check-maven.version>
+        <dependency-track-maven.version>1.4.0</dependency-track-maven.version>
         <exec-maven-plugin.version>3.1.0</exec-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
@@ -107,18 +109,15 @@
         <wagon-ssh.version>3.5.1</wagon-ssh.version>
         <!-- versions for dependencies -->
         <!-- things we build -->
-        <bt-adm-version>2.7.4</bt-adm-version>
-        <bt-common-api-version>37.5.1</bt-common-api-version>
+        <bt-adm-version>2.7.5</bt-adm-version>
+        <bt-common-api-version>37.5.2</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.33</bt-args4j-version>
         <bt-commons-compress-version>1.22</bt-commons-compress-version>
         <bt-commons-io-version>2.11.0</bt-commons-io-version>
         <bt-commons-lang3-version>3.12.0</bt-commons-lang3-version>
         <bt-fastutil-version>8.5.9</bt-fastutil-version>
-        <!-- Remaining at Guava 26 until we decide what to do about
-             https://groups.google.com/g/guava-announce/c/Km82fZG68Sw
-             https://github.com/google/guava/issues/3320 -->
-        <bt-guava-version>26.0-jre</bt-guava-version>
+        <bt-guava-version>31.1-jre</bt-guava-version>
         <bt-hamcrest-version>2.2</bt-hamcrest-version>
         <bt-httpasyncclient-version>4.1.5</bt-httpasyncclient-version>
         <bt-httpclient-version>4.5.13</bt-httpclient-version>
@@ -132,7 +131,7 @@
         <bt-log4j-version>2.19.0</bt-log4j-version>
         <bt-metrics-version>4.2.12</bt-metrics-version>
         <bt-opencsv-version>5.7.1</bt-opencsv-version>
-        <bt-protobuf-version>3.12.2</bt-protobuf-version>
+        <bt-protobuf-version>3.21.7</bt-protobuf-version>
         <bt-slf4j-version>1.7.36</bt-slf4j-version>
         <bt-snakeyaml-version>1.33</bt-snakeyaml-version>
         <bt-stax2-api-version>4.2.1</bt-stax2-api-version>
@@ -555,6 +554,24 @@
                             <version>${maven.scm.version}</version>
                         </dependency>
                     </dependencies>
+                </plugin>
+                <plugin>
+                    <groupId>org.cyclonedx</groupId>
+                    <artifactId>cyclonedx-maven-plugin</artifactId>
+                    <version>${cyclonedx-maven-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>makeAggregateBom</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>io.github.pmckeown</groupId>
+                    <artifactId>dependency-track-maven-plugin</artifactId>
+                    <version>${dependency-track-maven.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>

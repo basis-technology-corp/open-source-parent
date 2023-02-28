@@ -1,5 +1,13 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 13.0.0
+
+## [COMN-297](https://basistech.atlassian.net/browse/COMN-297)
+- Add dependency on `org.cyclonedx:cyclonedx-maven-plugin` version 2.7.4
+- Add dependency on `io.github.pmckeown:dependency-track-maven-plugin` version 1.4.0
+- Update `bt-guava-version` to 31.1-jre from 26.0-jre
+- Update `bt-protobuf-version` to 3.21.7 from 3.12.2
+
 # 12.0.0
 
 ## [COMN-286](https://basistech.atlassian.net/browse/COMN-286)
