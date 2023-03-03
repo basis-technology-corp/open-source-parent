@@ -810,7 +810,7 @@
                 <version>${bt-httpclient-version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
+                <groupId>com.basistech.org.apache.httpcomponents</groupId>
                 <artifactId>httpclient-osgi</artifactId>
                 <version>${bt-custom-httpclient-osgi-version}</version>
             </dependency>
