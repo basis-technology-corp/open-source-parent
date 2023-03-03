@@ -812,7 +812,7 @@
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient-osgi</artifactId>
-                <version>${bt-httpclient-version}</version>
+                <version>${bt-custom-httpclient-osgi-version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
