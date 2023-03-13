@@ -1,5 +1,11 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 14.0.0
+
+## [WS-2698](https://basistech.atlassian.net/browse/WS-2698)
+- Add dependency on custom `com.basistech.org.apache.httpcomponents`
+- Add new property `bt-custom-httpclient-osgi-version` for the custom artifact
+
 # 13.0.0
 
 ## [COMN-297](https://basistech.atlassian.net/browse/COMN-297)
