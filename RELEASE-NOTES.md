@@ -1,5 +1,16 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 15.0.0
+- Renamed property `maven-enforcer-plugin-version` to `maven-enforcer-plugin.version`.
+- Renamed property `maven-scm-plugin.version` to `maven-scm-publish-plugin.version`.
+- Upgrade many plugin versions; including `maven-release-plugin`.
+- Upgrade to 6.0.0 of `com.basistech:open-source-buildtools` to pick up PMD deprecation fixes.
+- Fix checkstyle plugin configuration:  Use `inputEncoding` instead of `encoding`.
+- Fix checkstyle plugin configuration:  `linkXRef` not applicable for `check` goal.
+- Fix pmd plugin configuration:  Use `inputEncoding` instead of `sourceEncoding`.
+- Bump minimum Maven version from 3.6.3 to 3.8.4.
+- Change organization url to rosette.com
+
 # 14.0.0
 
 ## [WS-2698](https://basistech.atlassian.net/browse/WS-2698)
