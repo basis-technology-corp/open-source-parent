@@ -1,8 +1,6 @@
 # Release Notes for com.basistech:open-source-parent #
 
 # 15.0.0
-- Renamed property `maven-enforcer-plugin-version` to `maven-enforcer-plugin.version`.
-- Renamed property `maven-scm-plugin.version` to `maven-scm-publish-plugin.version`.
 - Upgrade many plugin versions; including `maven-release-plugin`.
 - Upgrade to 6.0.0 of `com.basistech:open-source-buildtools` to pick up PMD deprecation fixes.
 - Fix checkstyle plugin configuration:  Use `inputEncoding` instead of `encoding`.
