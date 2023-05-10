@@ -61,7 +61,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <bt.compile.release>11</bt.compile.release>
         <buildtools.artifact>open-source-buildtools</buildtools.artifact>
-        <buildtools.version>6.0.0</buildtools.version>
+        <buildtools.version>7.0.0</buildtools.version>
         <maven-gpg-plugin.phase>verify</maven-gpg-plugin.phase>
         <nexus-staging-plugin-internal-nexus-url>https://nexus.basistech.net/nexus/</nexus-staging-plugin-internal-nexus-url>
         <nexus-staging-plugin-internal-server-id>basistech.repo</nexus-staging-plugin-internal-server-id>
