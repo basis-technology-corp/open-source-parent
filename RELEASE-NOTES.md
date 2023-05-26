@@ -1,6 +1,7 @@
 # Release Notes for com.basistech:open-source-parent #
 
 # 15.0.0
+- Upgrade many dependency versions
 - Upgrade many plugin versions; including `maven-release-plugin`.
 - Upgrade to 7.0.0 of `com.basistech:open-source-buildtools` to pick up PMD deprecation fixes.
 - Fix checkstyle plugin configuration:  Use `inputEncoding` instead of `encoding`.
