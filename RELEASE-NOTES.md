@@ -1,5 +1,12 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 16.0.0
+
+- Upgrade many dependency versions
+- Upgrade many plugin versions
+- Add a new property (`bt-checkstyle-version`) to specify the version of
+  Checkstyle `maven-checkstyle-plugin` uses
+
 # 15.0.0
 - Upgrade many dependency versions
 - Upgrade many plugin versions; including `maven-release-plugin`.
