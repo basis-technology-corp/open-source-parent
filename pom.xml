@@ -114,7 +114,7 @@
         <!-- things we consume -->
         <bt-args4j-version>2.33</bt-args4j-version>
         <bt-checkstyle-version>10.12.2</bt-checkstyle-version>
-        <bt-commons-compress-version>1.23.0</bt-commons-compress-version>
+        <bt-commons-compress-version>1.24.0</bt-commons-compress-version>
         <bt-commons-io-version>2.11.0</bt-commons-io-version>
         <bt-commons-lang3-version>3.12.0</bt-commons-lang3-version>
         <bt-fastutil-version>8.5.12</bt-fastutil-version>
