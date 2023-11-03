@@ -1,5 +1,12 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 17.0.0
+
+## [COMN-302](https://basistech.atlassian.net/browse/COMN-302)
+
+- Update `bt-adm-version` to 2.10.0
+- Update `bt-common-api-version` to 37.5.5
+
 # 16.0.0
 
 - Upgrade many dependency versions
