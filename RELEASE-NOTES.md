@@ -4,6 +4,12 @@
 
 ## [COMN-302](https://basistech.atlassian.net/browse/COMN-302)
 
+- Rename properties:
+    - `maven-enforcer-plugin-version` to `maven-enforcer-plugin.version`
+    - `maven-scm-plugin.version` to `maven-scm-publish-plugin.version`
+    - `maven.scm.version` to `maven-scm-plugin.version`
+    - `nexus-staging-plugin-version` to `nexus-staging-maven-plugin.version`
+    - `wagon-ssh` to `bt-wagon-ssh-version`
 - Update plugins:
     - `bnd-maven-plugin` to 7.0.0 from 6.4.0
     - `cyclonedx-maven-plugin` to 2.7.10 from 2.7.9
