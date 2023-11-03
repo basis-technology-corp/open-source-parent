@@ -4,6 +4,9 @@
 
 ## [COMN-302](https://basistech.atlassian.net/browse/COMN-302)
 
+- Add properties:
+    - `maven-invoker-plugin.version` at 3.6.0
+    - `versions-maven-plugin.version` at 2.16.1
 - Rename properties:
     - `maven-enforcer-plugin-version` to `maven-enforcer-plugin.version`
     - `maven-scm-plugin.version` to `maven-scm-publish-plugin.version`
