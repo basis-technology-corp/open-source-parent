@@ -113,12 +113,12 @@
         <bt-common-api-version>37.5.5</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.33</bt-args4j-version>
-        <bt-checkstyle-version>10.12.2</bt-checkstyle-version>
-        <bt-commons-compress-version>1.23.0</bt-commons-compress-version>
-        <bt-commons-io-version>2.11.0</bt-commons-io-version>
+        <bt-checkstyle-version>10.12.4</bt-checkstyle-version>
+        <bt-commons-compress-version>1.24.0</bt-commons-compress-version>
+        <bt-commons-io-version>2.15.0</bt-commons-io-version>
         <bt-commons-lang3-version>3.12.0</bt-commons-lang3-version>
         <bt-fastutil-version>8.5.12</bt-fastutil-version>
-        <bt-guava-version>32.1.2-jre</bt-guava-version>
+        <bt-guava-version>32.1.3-jre</bt-guava-version>
         <bt-hamcrest-version>2.2</bt-hamcrest-version>
         <bt-httpasyncclient-version>4.1.5</bt-httpasyncclient-version>
         <bt-httpclient-version>4.5.14</bt-httpclient-version>
@@ -126,17 +126,17 @@
         <bt-httpcore-version>4.4.16</bt-httpcore-version>
         <bt-httpmime-version>4.5.14</bt-httpmime-version>
         <bt-icu4j-version>70.1</bt-icu4j-version>
-        <bt-jackson-version>2.15.2</bt-jackson-version>
+        <bt-jackson-version>2.15.3</bt-jackson-version>
         <bt-jarchivelib-version>0.9.100-basis</bt-jarchivelib-version>
         <bt-junit-version>4.13.2</bt-junit-version>
-        <bt-liblinear-version>2.30</bt-liblinear-version>
-        <bt-log4j-version>2.20.0</bt-log4j-version>
-        <bt-metrics-version>4.2.19</bt-metrics-version>
+        <bt-liblinear-version>2.44</bt-liblinear-version>
+        <bt-log4j-version>2.21.1</bt-log4j-version>
+        <bt-metrics-version>4.2.21</bt-metrics-version>
         <bt-opencsv-version>5.8</bt-opencsv-version>
-        <bt-protobuf-version>3.23.4</bt-protobuf-version>
+        <bt-protobuf-version>3.25.0</bt-protobuf-version>
         <bt-slf4j-version>1.7.36</bt-slf4j-version>
-        <bt-snakeyaml-version>2.0</bt-snakeyaml-version>
-        <bt-stax2-api-version>4.2.1</bt-stax2-api-version>
+        <bt-snakeyaml-version>2.2</bt-snakeyaml-version>
+        <bt-stax2-api-version>4.2.2</bt-stax2-api-version>
         <bt-woodstox-version>4.4.1</bt-woodstox-version>
     </properties>
     <build>

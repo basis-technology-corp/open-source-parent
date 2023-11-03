@@ -4,8 +4,21 @@
 
 ## [COMN-302](https://basistech.atlassian.net/browse/COMN-302)
 
-- Update `bt-adm-version` to 2.10.0
-- Update `bt-common-api-version` to 37.5.5
+- Update internal dependencies:
+    - `bt-adm-version` to 2.10.0 from 2.9.0
+    - `bt-common-api-version` to 37.5.5 from 37.5.4
+- Update external dependencies:
+    - `bt-checkstyle-version` to 10.12.4 from 10.12.2
+    - `bt-commons-compress-version` to 1.24.0 from 1.23.0
+    - `bt-commons-io-version` to 2.15.0 from 2.11.0
+    - `bt-guava-version` to 32.1.3-jre from 32.1.2-jre
+    - `bt-jackson-version` to 2.15.3 from 2.15.2
+    - `bt-liblinear-version` to 2.44 from 2.30
+    - `bt-log4j-version` to 2.21.1 from 2.20.0
+    - `bt-metrics-version` to 4.2.21 from 4.2.19
+    - `bt-protobuf-version` to 3.25.0 from 3.23.4
+    - `bt-snakeyaml-version` to 2.2 from 2.0
+    - `bt-stax2-api-version` to 4.2.2 from 4.2.1
 
 # 16.0.0
 
