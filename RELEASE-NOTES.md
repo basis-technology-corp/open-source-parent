@@ -4,6 +4,20 @@
 
 ## [COMN-302](https://basistech.atlassian.net/browse/COMN-302)
 
+- Update plugins:
+    - `bnd-maven-plugin` to 7.0.0 from 6.4.0
+    - `cyclonedx-maven-plugin` to 2.7.10 from 2.7.9
+    - `dependency-check-maven` to 8.4.2 from 8.3.1
+    - `dependency-track-maven-plugin` to 1.7.0 from 1.6.0
+    - `jacoco-maven-plugin` to 0.8.11 from 0.8.10
+    - `maven-checkstyle-plugin` to 3.3.1 from 3.3.0
+    - `maven-clean-plugin` to 3.3.2 from 3.3.1
+    - `maven-dependency-plugin` to 3.6.1 from 3.6.0
+    - `maven-enforcer-plugin` to 3.4.1 from 3.3.0
+    - `maven-javadoc-plugin` to 3.6.0 from 3.5.0
+    - `maven-shade-plugin` to 3.5.1 from 3.5.0
+    - `maven-site-plugin` to 4.0.0-M11 from 4.0.0-M9
+    - `maven-surefire-plugin` to 3.2.1 from 3.1.2
 - Update internal dependencies:
     - `bt-adm-version` to 2.10.0 from 2.9.0
     - `bt-common-api-version` to 37.5.5 from 37.5.4
