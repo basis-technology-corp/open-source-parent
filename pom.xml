@@ -107,6 +107,7 @@
         <maven-surefire-plugin.version>3.2.1</maven-surefire-plugin.version>
         <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
+        <spotbugs-maven-plugin.version>4.8.1.0</spotbugs-maven-plugin.version>
         <versions-maven-plugin.version>2.16.1</versions-maven-plugin.version>
         <!-- versions for dependencies -->
         <!-- things we build -->
@@ -137,6 +138,7 @@
         <bt-protobuf-version>3.25.0</bt-protobuf-version>
         <bt-slf4j-version>1.7.36</bt-slf4j-version>
         <bt-snakeyaml-version>2.2</bt-snakeyaml-version>
+        <bt-spotbugs-version>4.8.1</bt-spotbugs-version>
         <bt-stax2-api-version>4.2.2</bt-stax2-api-version>
         <bt-wagon-ssh-version>3.5.3</bt-wagon-ssh-version>
         <bt-woodstox-version>4.4.1</bt-woodstox-version>
