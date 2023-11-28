@@ -1,5 +1,50 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 17.0.0
+
+## [COMN-302](https://basistech.atlassian.net/browse/COMN-302)
+
+- Add properties:
+    - `bt-spotbugs-version` at 4.8.1
+    - `maven-invoker-plugin.version` at 3.6.0
+    - `spotbugs-maven-plugin.version` at 4.8.1.0
+    - `versions-maven-plugin.version` at 2.16.1
+- Rename properties:
+    - `maven-enforcer-plugin-version` to `maven-enforcer-plugin.version`
+    - `maven-scm-plugin.version` to `maven-scm-publish-plugin.version`
+    - `maven.scm.version` to `maven-scm-plugin.version`
+    - `nexus-staging-plugin-version` to `nexus-staging-maven-plugin.version`
+    - `wagon-ssh` to `bt-wagon-ssh-version`
+- Update plugins:
+    - `bnd-maven-plugin` to 7.0.0 from 6.4.0
+    - `cyclonedx-maven-plugin` to 2.7.10 from 2.7.9
+    - `dependency-check-maven` to 8.4.2 from 8.3.1
+    - `dependency-track-maven-plugin` to 1.7.0 from 1.6.0
+    - `jacoco-maven-plugin` to 0.8.11 from 0.8.10
+    - `maven-checkstyle-plugin` to 3.3.1 from 3.3.0
+    - `maven-clean-plugin` to 3.3.2 from 3.3.1
+    - `maven-dependency-plugin` to 3.6.1 from 3.6.0
+    - `maven-enforcer-plugin` to 3.4.1 from 3.3.0
+    - `maven-javadoc-plugin` to 3.6.0 from 3.5.0
+    - `maven-shade-plugin` to 3.5.1 from 3.5.0
+    - `maven-site-plugin` to 4.0.0-M11 from 4.0.0-M9
+    - `maven-surefire-plugin` to 3.2.1 from 3.1.2
+- Update internal dependencies:
+    - `bt-adm-version` to 2.10.0 from 2.9.0
+    - `bt-common-api-version` to 37.5.5 from 37.5.4
+- Update external dependencies:
+    - `bt-checkstyle-version` to 10.12.4 from 10.12.2
+    - `bt-commons-compress-version` to 1.24.0 from 1.23.0
+    - `bt-commons-io-version` to 2.15.0 from 2.11.0
+    - `bt-guava-version` to 32.1.3-jre from 32.1.2-jre
+    - `bt-jackson-version` to 2.15.3 from 2.15.2
+    - `bt-liblinear-version` to 2.44 from 2.30
+    - `bt-log4j-version` to 2.21.1 from 2.20.0
+    - `bt-metrics-version` to 4.2.21 from 4.2.19
+    - `bt-protobuf-version` to 3.25.0 from 3.23.4
+    - `bt-snakeyaml-version` to 2.2 from 2.0
+    - `bt-stax2-api-version` to 4.2.2 from 4.2.1
+
 # 16.0.0
 
 - Upgrade many dependency versions
