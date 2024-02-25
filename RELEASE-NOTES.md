@@ -1,5 +1,21 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 18.0.0
+
+## [COMN-311](https://babelstreet.atlassian.net/browse/COMN-311)
+
+- Remove properties:
+    - `bnd-maven-plugin.version`
+    - `bt-custom-httpclient-osgi-version`
+    - `maven-bundle-plugin.version`
+- Remove plugin configurations:
+    - `biz.aQute.bnd:bnd-maven-plugin`
+    - `org.apache.felix:maven-bundle-plugin`
+- Remove dependencies:
+    - `com.basistech.org.apache.httpcomponents:httpclient-osgi`
+    - `org.apache.httpcomponents:httpasyncclient-osgi`
+    - `org.apache.httpcomponents:httpcore-osgi`
+
 # 17.0.0
 
 ## [COMN-302](https://babelstreet.atlassian.net/browse/COMN-302)
