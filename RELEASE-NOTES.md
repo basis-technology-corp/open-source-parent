@@ -2,6 +2,13 @@
 
 # 18.0.0
 
+## [COMN-305](https://babelstreet.atlassian.net/browse/COMN-305)
+
+- Add property:
+    - `bt-commons-cli-version` at 1.6.0
+- Add dependency:
+    - `commons-cli:commons-cli`
+
 ## [COMN-311](https://babelstreet.atlassian.net/browse/COMN-311)
 
 - Remove properties:
