@@ -115,7 +115,7 @@
         <bt-args4j-version>2.33</bt-args4j-version>
         <bt-checkstyle-version>10.12.4</bt-checkstyle-version>
         <bt-commons-cli-version>1.6.0</bt-commons-cli-version>
-        <bt-commons-compress-version>1.24.0</bt-commons-compress-version>
+        <bt-commons-compress-version>1.26.0</bt-commons-compress-version>
         <bt-commons-io-version>2.15.0</bt-commons-io-version>
         <bt-commons-lang3-version>3.12.0</bt-commons-lang3-version>
         <bt-fastutil-version>8.5.12</bt-fastutil-version>
