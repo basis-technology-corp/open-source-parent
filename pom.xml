@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  ~ Copyright 2015-2023 Basis Technology Corp.
+  ~ Copyright 2015-2024 Basis Technology Corp.
   ~
   ~    Licensed under the Apache License, Version 2.0 (the "License");
   ~    you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>17.0.1-SNAPSHOT</version>
+    <version>18.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <name>open-source-parent</name>
@@ -74,7 +74,6 @@
         <release-profile>release</release-profile>
         <skip-dependency-convergence>false</skip-dependency-convergence>
         <!-- Consolidating maven plugin versions here. -->
-        <bnd-maven-plugin.version>7.0.0</bnd-maven-plugin.version>
         <buildnumber-maven-plugin.version>3.2.0</buildnumber-maven-plugin.version>
         <cyclonedx-maven-plugin.version>2.7.10</cyclonedx-maven-plugin.version>
         <dependency-check-maven.version>8.4.2</dependency-check-maven.version>
@@ -83,7 +82,6 @@
         <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
         <maven-assembly-plugin.version>3.6.0</maven-assembly-plugin.version>
-        <maven-bundle-plugin.version>5.1.9</maven-bundle-plugin.version>
         <maven-checkstyle-plugin.version>3.3.1</maven-checkstyle-plugin.version>
         <maven-clean-plugin.version>3.3.2</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
@@ -116,6 +114,7 @@
         <!-- things we consume -->
         <bt-args4j-version>2.33</bt-args4j-version>
         <bt-checkstyle-version>10.12.4</bt-checkstyle-version>
+        <bt-commons-cli-version>1.6.0</bt-commons-cli-version>
         <bt-commons-compress-version>1.24.0</bt-commons-compress-version>
         <bt-commons-io-version>2.15.0</bt-commons-io-version>
         <bt-commons-lang3-version>3.12.0</bt-commons-lang3-version>
@@ -124,7 +123,6 @@
         <bt-hamcrest-version>2.2</bt-hamcrest-version>
         <bt-httpasyncclient-version>4.1.5</bt-httpasyncclient-version>
         <bt-httpclient-version>4.5.14</bt-httpclient-version>
-        <bt-custom-httpclient-osgi-version>4.5.14-1</bt-custom-httpclient-osgi-version>
         <bt-httpcore-version>4.4.16</bt-httpcore-version>
         <bt-httpmime-version>4.5.14</bt-httpmime-version>
         <bt-icu4j-version>70.1</bt-icu4j-version>
@@ -503,43 +501,6 @@
                     <version>${maven-shade-plugin.version}</version>
                 </plugin>
                 <plugin>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>maven-bundle-plugin</artifactId>
-                    <version>${maven-bundle-plugin.version}</version>
-                    <extensions>true</extensions>
-                    <configuration>
-                        <archive>
-                            <addMavenDescriptor>false</addMavenDescriptor>
-                            <manifest>
-                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            </manifest>
-                            <manifestEntries>
-                                <Bundle-Vendor>Basis Technology Corp.</Bundle-Vendor>
-                                <Implementation-Vendor>Basis Technology Corp.</Implementation-Vendor>
-                                <Implementation-Version>${project.version}</Implementation-Version>
-                            </manifestEntries>
-                        </archive>
-                        <instructions>
-                            <!-- Force consumers to respect third version component. -->
-                            <_consumer-policy>$${range;[===,+)}</_consumer-policy>
-                        </instructions>
-                        <dumpInstructions>${project.build.directory}/instructions.txt</dumpInstructions>
-                        <niceManifest>true</niceManifest>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>biz.aQute.bnd</groupId>
-                    <artifactId>bnd-maven-plugin</artifactId>
-                    <version>${bnd-maven-plugin.version}</version>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>bnd-process</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-                <plugin>
                     <groupId>org.owasp</groupId>
                     <artifactId>dependency-check-maven</artifactId>
                     <version>${dependency-check-maven.version}</version>
@@ -784,6 +745,11 @@
                 <version>${bt-opencsv-version}</version>
             </dependency>
             <dependency>
+                <groupId>commons-cli</groupId>
+                <artifactId>commons-cli</artifactId>
+                <version>${bt-commons-cli-version}</version>
+            </dependency>
+            <dependency>
                 <groupId>de.bwaldvogel</groupId>
                 <artifactId>liblinear</artifactId>
                 <version>${bt-liblinear-version}</version>
@@ -805,27 +771,12 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpasyncclient-osgi</artifactId>
-                <version>${bt-httpasyncclient-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
                 <version>${bt-httpclient-version}</version>
             </dependency>
             <dependency>
-                <groupId>com.basistech.org.apache.httpcomponents</groupId>
-                <artifactId>httpclient-osgi</artifactId>
-                <version>${bt-custom-httpclient-osgi-version}</version>
-            </dependency>
-            <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpcore</artifactId>
-                <version>${bt-httpcore-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpcore-osgi</artifactId>
                 <version>${bt-httpcore-version}</version>
             </dependency>
             <dependency>

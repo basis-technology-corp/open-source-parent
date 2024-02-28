@@ -1,8 +1,31 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 18.0.0
+
+## [COMN-305](https://babelstreet.atlassian.net/browse/COMN-305)
+
+- Add property:
+    - `bt-commons-cli-version` at 1.6.0
+- Add dependency:
+    - `commons-cli:commons-cli`
+
+## [COMN-311](https://babelstreet.atlassian.net/browse/COMN-311)
+
+- Remove properties:
+    - `bnd-maven-plugin.version`
+    - `bt-custom-httpclient-osgi-version`
+    - `maven-bundle-plugin.version`
+- Remove plugin configurations:
+    - `biz.aQute.bnd:bnd-maven-plugin`
+    - `org.apache.felix:maven-bundle-plugin`
+- Remove dependencies:
+    - `com.basistech.org.apache.httpcomponents:httpclient-osgi`
+    - `org.apache.httpcomponents:httpasyncclient-osgi`
+    - `org.apache.httpcomponents:httpcore-osgi`
+
 # 17.0.0
 
-## [COMN-302](https://basistech.atlassian.net/browse/COMN-302)
+## [COMN-302](https://babelstreet.atlassian.net/browse/COMN-302)
 
 - Add properties:
     - `bt-spotbugs-version` at 4.8.1
@@ -63,13 +86,13 @@
 
 # 14.0.0
 
-## [WS-2698](https://basistech.atlassian.net/browse/WS-2698)
+## [WS-2698](https://babelstreet.atlassian.net/browse/WS-2698)
 - Add dependency on custom `com.basistech.org.apache.httpcomponents`
 - Add new property `bt-custom-httpclient-osgi-version` for the custom artifact
 
 # 13.0.0
 
-## [COMN-297](https://basistech.atlassian.net/browse/COMN-297)
+## [COMN-297](https://babelstreet.atlassian.net/browse/COMN-297)
 - Add dependency on `org.cyclonedx:cyclonedx-maven-plugin` version 2.7.4
 - Add dependency on `io.github.pmckeown:dependency-track-maven-plugin` version 1.4.0
 - Update `bt-guava-version` to 31.1-jre from 26.0-jre
@@ -77,26 +100,26 @@
 
 # 12.0.0
 
-## [COMN-286](https://basistech.atlassian.net/browse/COMN-286)
+## [COMN-286](https://babelstreet.atlassian.net/browse/COMN-286)
 - Update `bt-snakeyaml-version` to 1.33 from 1.30
 
-## [COMN-287](https://basistech.atlassian.net/browse/COMN-287)
+## [COMN-287](https://babelstreet.atlassian.net/browse/COMN-287)
 - Update lots of plugins and dependencies
 
 # 11.0.0
 
-## [COMN-284](https://basistech.atlassian.net/browse/COMN-284)
+## [COMN-284](https://babelstreet.atlassian.net/browse/COMN-284)
 - Update `nexus-staging-plugin-version` to 1.6.12 from 1.6.8
 - Update `bt-common-api-version` to 37.5.0 from 37.4.0
 
-## [COMN-282](https://basistech.atlassian.net/browse/COMN-282)
+## [COMN-282](https://babelstreet.atlassian.net/browse/COMN-282)
 - Update `maven-enforcer-plugin` to require Java version 17
 - Add new property `bt.compile.release` to target Java version 11
 - Remove redundant properties `bt.compile.source`, `bt.compile.target`, `bt.java.source`, and `bt.java.target`
 
 # 10.0.0
 
-## [COMN-279](https://basistech.atlassian.net/browse/COMN-279)
+## [COMN-279](https://babelstreet.atlassian.net/browse/COMN-279)
 - Update `bt-log4j-version` to 2.17.1 from 1.2.17
 - Change Log4j dependencies from `log4j:log4j` to
   `org.apache.logging.log4j:log4j-api`,
@@ -104,41 +127,41 @@
   `org.apache.logging.log4j:log4j-slf4j-impl`
 - Remove `org.slf4j:slf4j-log4j12` dependency
 
-## [COMN-280](https://basistech.atlassian.net/browse/COMN-280)
+## [COMN-280](https://babelstreet.atlassian.net/browse/COMN-280)
 - Update lots of plugins and dependencies
 - Change Apache Commons Lang dependency from `commons-lang:commons-lang` to
   `org.apache.commons:commons-lang3`
 - Add dependency on `org.slf4j:log4j-over-slf4j` version 1.7.32
 
-## [ROS-327](https://basistech.atlassian.net/browse/ROS-327)
+## [ROS-327](https://babelstreet.atlassian.net/browse/ROS-327)
 - Add a dependency on `org.apache.commons:commons-compress` version 1.21
 
 # 9.0.0
 
-## [COMN-274](https://basistech.atlassian.net/browse/COMN-274):
+## [COMN-274](https://babelstreet.atlassian.net/browse/COMN-274):
 - Update `dependency-check-maven.version` to 6.1.6 from 6.0.5
 
-## [COMN-276](https://basistech.atlassian.net/browse/COMN-276):
+## [COMN-276](https://babelstreet.atlassian.net/browse/COMN-276):
 - Update `bt-common-api-version` to 37.3.0 from 37.2.0
 
 # 8.1.0 #
 
-## [COMN-273](https://basistech.atlassian.net/browse/COMN-273):
+## [COMN-273](https://babelstreet.atlassian.net/browse/COMN-273):
 - Update `bt-common-api-version` to 37.2.0 from 37.1.0
 
 # 8.0.0 #
 
-## [COMN-271](https://basistech.atlassian.net/browse/COMN-271):
+## [COMN-271](https://babelstreet.atlassian.net/browse/COMN-271):
 - Update `bt-common-api-version` to 37.1.0 from 37.0.1
 
 # 7.0.1 #
-## [COMN-268](https://basistech.atlassian.net/browse/COMN-268):
+## [COMN-268](https://babelstreet.atlassian.net/browse/COMN-268):
 - downgrade maven-release-plugin to 2.5.3 for MRELEASE-1042
 
 # 7.0.0 #
-## [COMN-268](https://basistech.atlassian.net/browse/COMN-268):
+## [COMN-268](https://babelstreet.atlassian.net/browse/COMN-268):
 - update dependency-check; remove execution
 
 # 5.3.0 #
-## [ROS-321](https://basistech.atlassian.net/browse/ROS-321):
+## [ROS-321](https://babelstreet.atlassian.net/browse/ROS-321):
 - integrate Sonarqube
