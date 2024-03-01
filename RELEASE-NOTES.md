@@ -2,6 +2,33 @@
 
 # 18.0.0
 
+## [COMN-303](https://basistech.atlassian.net/browse/COMN-303)
+
+- Update properties:
+    - `bt-adm-version` to 3.0.0
+    - `bt-common-api-version` to 38.0.0
+    - `bt-commons-compress-version` to 1.26.0
+    - `bt-commons-io-version` to 2.15.1
+    - `bt-commons-lang3-version` to 3.14.0
+    - `bt-fastutil-version` to 8.5.13
+    - `bt-guava-version` to 33.0.0-jre
+    - `bt-icu4j-version` to 74.2
+    - `bt-jackson-version` to 2.16.1
+    - `bt-opencsv-version` to 5.9
+    - `bt-spotbugs-version` to 4.8.3
+    - `cyclonedx-maven-plugin.version` to 2.7.11
+    - `exec-maven-plugin.version` to 3.2.0
+    - `maven-compiler-plugin.version` to 3.12.1
+    - `maven-javadoc-plugin.version` to 3.6.3
+    - `maven-pmd-plugin.version` to 3.21.2
+    - `maven-project-info-reports-plugin.version` to 3.5.0
+    - `maven-shade-plugin.version` to 3.5.2
+    - `maven-site-plugin.version` to 4.0.0-M13
+    - `maven-surefire-plugin.version` to 3.2.5
+    - `spotbugs-maven-plugin.version` to 4.8.3.1
+    - `versions-maven-plugin.version` to 2.16.2
+
+
 ## [COMN-305](https://babelstreet.atlassian.net/browse/COMN-305)
 
 - Add property:
