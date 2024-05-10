@@ -7,6 +7,21 @@
 - Update properties:
     - `bt-adm-version` to 3.0.1
     - `bt-common-api-version` to 38.0.1
+    - `cyclonedx-maven-plugin.version` to 2.8.0
+    - `dependency-check-maven.version` to 9.1.0
+    - `jacoco-maven-plugin.version` to 0.8.12
+    - `maven-assembly-plugin.version` to 3.7.1
+    - `maven-compiler-plugin.version` to 3.13.0
+    - `maven-deploy-plugin.version` to 3.1.2
+    - `maven-gpg-plugin.version` to 3.2.4
+    - `maven-install-plugin.version` to 3.1.2
+    - `maven-invoker-plugin.version` to 3.6.1
+    - `maven-jar-plugin.version` to 3.4.1
+    - `maven-pmd-plugin.version` to 3.22.0
+    - `maven-scm-plugin.version` to 2.1.0
+    - `maven-shade-plugin.version` to 3.5.3
+    - `maven-source-plugin.version` to 3.3.1
+    - `spotbugs-maven-plugin.version` to 4.8.5.0
 
 # 18.0.0
 
