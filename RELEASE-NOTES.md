@@ -12,7 +12,18 @@
     - `bt-wagon-ssh-version`
 - Update properties:
     - `bt-adm-version` to 3.0.1
+    - `bt-args4j-version` to 2.37
+    - `bt-checkstyle-version` to 10.16.0
     - `bt-common-api-version` to 38.0.1
+    - `bt-commons-cli-version` to 1.7.0
+    - `bt-commons-compress-version` to 1.26.1
+    - `bt-commons-io-version` to 2.16.1
+    - `bt-guava-version` to 33.2.0-jre
+    - `bt-jackson-version` to 2.17.1
+    - `bt-log4j-version` to 2.23.1
+    - `bt-protobuf-version` to 3.25.3
+    - `bt-spotbugs-version` to 4.8.5
+    - `bt-woodstox-version` to 6.6.2
     - `cyclonedx-maven-plugin.version` to 2.8.0
     - `dependency-check-maven.version` to 9.1.0
     - `jacoco-maven-plugin.version` to 0.8.12
