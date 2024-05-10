@@ -10,6 +10,8 @@
     - `bt-jarchivelib-version`
     - `bt-metrics-version`
     - `bt-wagon-ssh-version`
+- Replace dependency:
+    - `org.codehaus.woodstox:woodstox-core-asl` with `com.fasterxml.woodstox:woodstox-core`
 - Update properties:
     - `bt-adm-version` to 3.0.1
     - `bt-args4j-version` to 2.37
