@@ -127,18 +127,15 @@
         <bt-httpmime-version>4.5.14</bt-httpmime-version>
         <bt-icu4j-version>74.2</bt-icu4j-version>
         <bt-jackson-version>2.16.1</bt-jackson-version>
-        <bt-jarchivelib-version>0.9.100-basis</bt-jarchivelib-version>
         <bt-junit-version>4.13.2</bt-junit-version>
         <bt-liblinear-version>2.44</bt-liblinear-version>
         <bt-log4j-version>2.21.1</bt-log4j-version>
-        <bt-metrics-version>4.2.21</bt-metrics-version>
         <bt-opencsv-version>5.9</bt-opencsv-version>
         <bt-protobuf-version>3.25.0</bt-protobuf-version>
         <bt-slf4j-version>1.7.36</bt-slf4j-version>
         <bt-snakeyaml-version>2.2</bt-snakeyaml-version>
         <bt-spotbugs-version>4.8.3</bt-spotbugs-version>
         <bt-stax2-api-version>4.2.2</bt-stax2-api-version>
-        <bt-wagon-ssh-version>3.5.3</bt-wagon-ssh-version>
         <bt-woodstox-version>4.4.1</bt-woodstox-version>
     </properties>
     <build>
@@ -783,11 +780,6 @@
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpmime</artifactId>
                 <version>${bt-httpmime-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.rauschig</groupId>
-                <artifactId>jarchivelib</artifactId>
-                <version>${bt-jarchivelib-version}</version>
             </dependency>
             <dependency>
                 <groupId>org.yaml</groupId>

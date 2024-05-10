@@ -4,6 +4,12 @@
 
 ## [COMN-314](https://basistech.atlassian.net/browse/COMN-314)
 
+- Remove dependency:
+    - `org.rauschig:jarchivelib`
+- Remove properties:
+    - `bt-jarchivelib-version`
+    - `bt-metrics-version`
+    - `bt-wagon-ssh-version`
 - Update properties:
     - `bt-adm-version` to 3.0.1
     - `bt-common-api-version` to 38.0.1
@@ -87,7 +93,7 @@
     - `maven-scm-plugin.version` to `maven-scm-publish-plugin.version`
     - `maven.scm.version` to `maven-scm-plugin.version`
     - `nexus-staging-plugin-version` to `nexus-staging-maven-plugin.version`
-    - `wagon-ssh` to `bt-wagon-ssh-version`
+    - `wagon-ssh.version` to `bt-wagon-ssh-version`
 - Update plugins:
     - `bnd-maven-plugin` to 7.0.0 from 6.4.0
     - `cyclonedx-maven-plugin` to 2.7.10 from 2.7.9
