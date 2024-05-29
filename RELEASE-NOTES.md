@@ -1,5 +1,47 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 19.0.0
+
+## [COMN-314](https://basistech.atlassian.net/browse/COMN-314)
+
+- Remove dependency:
+    - `org.rauschig:jarchivelib`
+- Remove properties:
+    - `bt-jarchivelib-version`
+    - `bt-metrics-version`
+    - `bt-wagon-ssh-version`
+- Replace dependency:
+    - `org.codehaus.woodstox:woodstox-core-asl` with `com.fasterxml.woodstox:woodstox-core`
+- Update properties:
+    - `bt-adm-version` to 3.0.1
+    - `bt-args4j-version` to 2.37
+    - `bt-checkstyle-version` to 10.16.0
+    - `bt-common-api-version` to 38.0.1
+    - `bt-commons-cli-version` to 1.7.0
+    - `bt-commons-compress-version` to 1.26.1
+    - `bt-commons-io-version` to 2.16.1
+    - `bt-guava-version` to 33.2.0-jre
+    - `bt-jackson-version` to 2.17.1
+    - `bt-log4j-version` to 2.23.1
+    - `bt-protobuf-version` to 3.25.3
+    - `bt-spotbugs-version` to 4.8.5
+    - `bt-woodstox-version` to 6.6.2
+    - `cyclonedx-maven-plugin.version` to 2.8.0
+    - `dependency-check-maven.version` to 9.1.0
+    - `jacoco-maven-plugin.version` to 0.8.12
+    - `maven-assembly-plugin.version` to 3.7.1
+    - `maven-compiler-plugin.version` to 3.13.0
+    - `maven-deploy-plugin.version` to 3.1.2
+    - `maven-gpg-plugin.version` to 3.2.4
+    - `maven-install-plugin.version` to 3.1.2
+    - `maven-invoker-plugin.version` to 3.6.1
+    - `maven-jar-plugin.version` to 3.4.1
+    - `maven-pmd-plugin.version` to 3.22.0
+    - `maven-scm-plugin.version` to 2.1.0
+    - `maven-shade-plugin.version` to 3.5.3
+    - `maven-source-plugin.version` to 3.3.1
+    - `spotbugs-maven-plugin.version` to 4.8.5.0
+
 # 18.0.0
 
 ## [COMN-303](https://basistech.atlassian.net/browse/COMN-303)
@@ -64,7 +106,7 @@
     - `maven-scm-plugin.version` to `maven-scm-publish-plugin.version`
     - `maven.scm.version` to `maven-scm-plugin.version`
     - `nexus-staging-plugin-version` to `nexus-staging-maven-plugin.version`
-    - `wagon-ssh` to `bt-wagon-ssh-version`
+    - `wagon-ssh.version` to `bt-wagon-ssh-version`
 - Update plugins:
     - `bnd-maven-plugin` to 7.0.0 from 6.4.0
     - `cyclonedx-maven-plugin` to 2.7.10 from 2.7.9
