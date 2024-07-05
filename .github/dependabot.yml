@@ -1,0 +1,34 @@
+version: 2
+updates:
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      plugins:
+        applies-to: version-updates
+        update-types:
+          - "patch"
+          - "minor"
+        patterns:
+          - "io.github.pmckeown:*"
+          - "org.apache.maven.plugins:*"
+          - "org.codehaus.mojo:*"
+          - "org.cyclonedx:*"
+          - "org.jacoco:*"
+          - "org.owasp:*"
+          - "org.sonatype.plugins:*"
+      minor-and-patch:
+        applies-to: version-updates
+        update-types:
+          - "patch"
+          - "minor"
+        exclude-patterns:
+          - "io.github.pmckeown:*"
+          - "org.apache.maven.plugins:*"
+          - "org.codehaus.mojo:*"
+          - "org.cyclonedx:*"
+          - "org.jacoco:*"
+          - "org.owasp:*"
+          - "org.sonatype.plugins:*"
+    open-pull-requests-limit: 10
