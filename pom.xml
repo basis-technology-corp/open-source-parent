@@ -350,7 +350,6 @@
                         <encoding>utf-8</encoding>
                         <release>${bt.compile.release}</release>
                         <debug>true</debug>
-                        <optimize>true</optimize>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -469,7 +468,6 @@
                         <rulesets>
                             <ruleset>pmd-ruleset.xml</ruleset>
                         </rulesets>
-                        <inputEncoding>UTF-8</inputEncoding>
                         <targetJdk>${bt.compile.source}</targetJdk>
                         <linkXRef>false</linkXRef>
                         <includeTests>true</includeTests>
