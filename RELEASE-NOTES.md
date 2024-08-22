@@ -1,5 +1,12 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 20.0.0
+
+## [COMN-318](https://basistech.atlassian.net/browse/COMN-318)
+
+- Add property:
+    - `bt-tensorflow-version` at 1.0.0-rc.1
+
 # 19.0.0
 
 ## [COMN-314](https://basistech.atlassian.net/browse/COMN-314)
