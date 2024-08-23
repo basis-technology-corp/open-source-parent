@@ -4,7 +4,8 @@
 
 ## [COMN-318](https://basistech.atlassian.net/browse/COMN-318)
 
-- Add property:
+- Add properties:
+    - `bt-lombok-version` at 1.18.34
     - `bt-tensorflow-version` at 1.0.0-rc.1
 - Update many properties, including:
     - `bt-adm-version` to 3.0.2
