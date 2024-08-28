@@ -6,6 +6,9 @@
 
 - Add property:
     - `bt-tensorflow-version` at 1.0.0-rc.1
+- Update many properties, including:
+    - `bt-adm-version` to 3.0.2
+    - `bt-common-api-version` to 38.0.2
 
 # 19.0.0
 

@@ -109,8 +109,8 @@
         <versions-maven-plugin.version>2.16.2</versions-maven-plugin.version>
         <!-- versions for dependencies -->
         <!-- things we build -->
-        <bt-adm-version>3.0.1</bt-adm-version>
-        <bt-common-api-version>38.0.1</bt-common-api-version>
+        <bt-adm-version>3.0.2</bt-adm-version>
+        <bt-common-api-version>38.0.2</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.37</bt-args4j-version>
         <bt-checkstyle-version>10.17.0</bt-checkstyle-version>
