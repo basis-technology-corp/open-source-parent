@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>19.0.1-SNAPSHOT</version>
+    <version>20.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <name>open-source-parent</name>
@@ -75,58 +75,58 @@
         <skip-dependency-convergence>false</skip-dependency-convergence>
         <!-- Consolidating maven plugin versions here. -->
         <buildnumber-maven-plugin.version>3.2.0</buildnumber-maven-plugin.version>
-        <cyclonedx-maven-plugin.version>2.8.0</cyclonedx-maven-plugin.version>
-        <dependency-check-maven.version>9.1.0</dependency-check-maven.version>
+        <cyclonedx-maven-plugin.version>2.8.1</cyclonedx-maven-plugin.version>
+        <dependency-check-maven.version>10.0.2</dependency-check-maven.version>
         <dependency-track-maven.version>1.7.0</dependency-track-maven.version>
-        <exec-maven-plugin.version>3.2.0</exec-maven-plugin.version>
+        <exec-maven-plugin.version>3.4.1</exec-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
         <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
         <maven-assembly-plugin.version>3.7.1</maven-assembly-plugin.version>
-        <maven-checkstyle-plugin.version>3.3.1</maven-checkstyle-plugin.version>
-        <maven-clean-plugin.version>3.3.2</maven-clean-plugin.version>
+        <maven-checkstyle-plugin.version>3.5.0</maven-checkstyle-plugin.version>
+        <maven-clean-plugin.version>3.4.0</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
-        <maven-dependency-plugin.version>3.6.1</maven-dependency-plugin.version>
-        <maven-deploy-plugin.version>3.1.2</maven-deploy-plugin.version>
-        <maven-enforcer-plugin.version>3.4.1</maven-enforcer-plugin.version>
-        <maven-gpg-plugin.version>3.2.4</maven-gpg-plugin.version>
-        <maven-install-plugin.version>3.1.2</maven-install-plugin.version>
+        <maven-dependency-plugin.version>3.8.0</maven-dependency-plugin.version>
+        <maven-deploy-plugin.version>3.1.3</maven-deploy-plugin.version>
+        <maven-enforcer-plugin.version>3.5.0</maven-enforcer-plugin.version>
+        <maven-gpg-plugin.version>3.2.5</maven-gpg-plugin.version>
+        <maven-install-plugin.version>3.1.3</maven-install-plugin.version>
         <maven-invoker-plugin.version>3.6.1</maven-invoker-plugin.version>
-        <maven-jar-plugin.version>3.4.1</maven-jar-plugin.version>
-        <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
-        <maven-pmd-plugin.version>3.22.0</maven-pmd-plugin.version>
-        <maven-project-info-reports-plugin.version>3.5.0</maven-project-info-reports-plugin.version>
-        <maven-release-plugin.version>3.0.1</maven-release-plugin.version>
+        <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
+        <maven-javadoc-plugin.version>3.8.0</maven-javadoc-plugin.version>
+        <maven-pmd-plugin.version>3.24.0</maven-pmd-plugin.version>
+        <maven-project-info-reports-plugin.version>3.7.0</maven-project-info-reports-plugin.version>
+        <maven-release-plugin.version>3.1.1</maven-release-plugin.version>
         <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
         <maven-scm-plugin.version>2.1.0</maven-scm-plugin.version>
-        <maven-scm-publish-plugin.version>3.2.1</maven-scm-publish-plugin.version>
-        <maven-shade-plugin.version>3.5.3</maven-shade-plugin.version>
-        <maven-site-plugin.version>4.0.0-M13</maven-site-plugin.version>
+        <maven-scm-publish-plugin.version>3.3.0</maven-scm-publish-plugin.version>
+        <maven-shade-plugin.version>3.6.0</maven-shade-plugin.version>
+        <maven-site-plugin.version>4.0.0-M15</maven-site-plugin.version>
         <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
-        <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>3.4.0</maven-surefire-plugin.version>
         <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
-        <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
+        <nexus-staging-maven-plugin.version>1.7.0</nexus-staging-maven-plugin.version>
         <spotbugs-maven-plugin.version>4.8.5.0</spotbugs-maven-plugin.version>
         <versions-maven-plugin.version>2.16.2</versions-maven-plugin.version>
         <!-- versions for dependencies -->
         <!-- things we build -->
-        <bt-adm-version>3.0.1</bt-adm-version>
-        <bt-common-api-version>38.0.1</bt-common-api-version>
+        <bt-adm-version>3.0.2</bt-adm-version>
+        <bt-common-api-version>38.0.2</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.37</bt-args4j-version>
-        <bt-checkstyle-version>10.16.0</bt-checkstyle-version>
-        <bt-commons-cli-version>1.7.0</bt-commons-cli-version>
-        <bt-commons-compress-version>1.26.1</bt-commons-compress-version>
+        <bt-checkstyle-version>10.17.0</bt-checkstyle-version>
+        <bt-commons-cli-version>1.9.0</bt-commons-cli-version>
+        <bt-commons-compress-version>1.27.0</bt-commons-compress-version>
         <bt-commons-io-version>2.16.1</bt-commons-io-version>
-        <bt-commons-lang3-version>3.14.0</bt-commons-lang3-version>
-        <bt-fastutil-version>8.5.13</bt-fastutil-version>
-        <bt-guava-version>33.2.0-jre</bt-guava-version>
+        <bt-commons-lang3-version>3.16.0</bt-commons-lang3-version>
+        <bt-fastutil-version>8.5.14</bt-fastutil-version>
+        <bt-guava-version>33.3.0-jre</bt-guava-version>
         <bt-hamcrest-version>2.2</bt-hamcrest-version>
         <bt-httpasyncclient-version>4.1.5</bt-httpasyncclient-version>
         <bt-httpclient-version>4.5.14</bt-httpclient-version>
         <bt-httpcore-version>4.4.16</bt-httpcore-version>
         <bt-httpmime-version>4.5.14</bt-httpmime-version>
         <bt-icu4j-version>74.2</bt-icu4j-version>
-        <bt-jackson-version>2.17.1</bt-jackson-version>
+        <bt-jackson-version>2.17.2</bt-jackson-version>
         <bt-junit-version>4.13.2</bt-junit-version>
         <bt-liblinear-version>2.44</bt-liblinear-version>
         <bt-log4j-version>2.23.1</bt-log4j-version>
@@ -136,7 +136,8 @@
         <bt-snakeyaml-version>2.2</bt-snakeyaml-version>
         <bt-spotbugs-version>4.8.5</bt-spotbugs-version>
         <bt-stax2-api-version>4.2.2</bt-stax2-api-version>
-        <bt-woodstox-version>6.6.2</bt-woodstox-version>
+        <bt-tensorflow-version>1.0.0-rc.1</bt-tensorflow-version>
+        <bt-woodstox-version>7.0.0</bt-woodstox-version>
     </properties>
     <build>
         <defaultGoal>install</defaultGoal>

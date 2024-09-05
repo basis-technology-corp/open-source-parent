@@ -1,8 +1,18 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 20.0.0
+
+## [COMN-318](https://babelstreet.atlassian.net/browse/COMN-318)
+
+- Add property:
+    - `bt-tensorflow-version` at 1.0.0-rc.1
+- Update many properties, including:
+    - `bt-adm-version` to 3.0.2
+    - `bt-common-api-version` to 38.0.2
+
 # 19.0.0
 
-## [COMN-314](https://basistech.atlassian.net/browse/COMN-314)
+## [COMN-314](https://babelstreet.atlassian.net/browse/COMN-314)
 
 - Remove dependency:
     - `org.rauschig:jarchivelib`
@@ -44,7 +54,7 @@
 
 # 18.0.0
 
-## [COMN-303](https://basistech.atlassian.net/browse/COMN-303)
+## [COMN-303](https://babelstreet.atlassian.net/browse/COMN-303)
 
 - Update properties:
     - `bt-adm-version` to 3.0.0
