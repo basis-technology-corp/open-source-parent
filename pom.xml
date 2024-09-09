@@ -113,11 +113,11 @@
         <bt-common-api-version>38.0.2</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.37</bt-args4j-version>
-        <bt-checkstyle-version>10.17.0</bt-checkstyle-version>
+        <bt-checkstyle-version>10.18.1</bt-checkstyle-version>
         <bt-commons-cli-version>1.9.0</bt-commons-cli-version>
-        <bt-commons-compress-version>1.27.0</bt-commons-compress-version>
+        <bt-commons-compress-version>1.27.1</bt-commons-compress-version>
         <bt-commons-io-version>2.16.1</bt-commons-io-version>
-        <bt-commons-lang3-version>3.16.0</bt-commons-lang3-version>
+        <bt-commons-lang3-version>3.17.0</bt-commons-lang3-version>
         <bt-fastutil-version>8.5.14</bt-fastutil-version>
         <bt-guava-version>33.3.0-jre</bt-guava-version>
         <bt-hamcrest-version>2.2</bt-hamcrest-version>
@@ -129,11 +129,11 @@
         <bt-jackson-version>2.17.2</bt-jackson-version>
         <bt-junit-version>4.13.2</bt-junit-version>
         <bt-liblinear-version>2.44</bt-liblinear-version>
-        <bt-log4j-version>2.23.1</bt-log4j-version>
+        <bt-log4j-version>2.24.0</bt-log4j-version>
         <bt-opencsv-version>5.9</bt-opencsv-version>
         <bt-protobuf-version>3.25.3</bt-protobuf-version>
         <bt-slf4j-version>1.7.36</bt-slf4j-version>
-        <bt-snakeyaml-version>2.2</bt-snakeyaml-version>
+        <bt-snakeyaml-version>2.3</bt-snakeyaml-version>
         <bt-spotbugs-version>4.8.5</bt-spotbugs-version>
         <bt-stax2-api-version>4.2.2</bt-stax2-api-version>
         <bt-tensorflow-version>1.0.0-rc.1</bt-tensorflow-version>
