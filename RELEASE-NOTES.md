@@ -1,5 +1,11 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 21.0.0
+
+- Rename property `bt.compile.release` to `bt.compile.target`
+- Reintroduce property `bt.compile.source` at 21
+- Update `maven-enforcer-plugin` to require Java version 21
+
 # 20.0.0
 
 ## [COMN-318](https://babelstreet.atlassian.net/browse/COMN-318)
