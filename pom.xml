@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>20.0.1-SNAPSHOT</version>
+    <version>21.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <name>open-source-parent</name>
@@ -59,7 +59,8 @@
         <maven.build.timestamp.format>yyyy.MM.dd_HH:mm:ss</maven.build.timestamp.format>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <bt.compile.release>11</bt.compile.release>
+        <bt.compile.source>21</bt.compile.source>
+        <bt.compile.target>11</bt.compile.target>
         <buildtools.artifact>open-source-buildtools</buildtools.artifact>
         <buildtools.version>7.0.0</buildtools.version>
         <maven-gpg-plugin.phase>verify</maven-gpg-plugin.phase>
@@ -156,7 +157,7 @@
                         <configuration>
                             <rules>
                                 <requireJavaVersion>
-                                    <version>[17.0.0,18.0.0)</version>
+                                    <version>${bt.compile.source}</version>
                                 </requireJavaVersion>
                             </rules>
                             <fail>true</fail>
@@ -349,7 +350,7 @@
                     <version>${maven-compiler-plugin.version}</version>
                     <configuration>
                         <encoding>utf-8</encoding>
-                        <release>${bt.compile.release}</release>
+                        <release>${bt.compile.target}</release>
                         <debug>true</debug>
                     </configuration>
                 </plugin>
@@ -469,7 +470,7 @@
                         <rulesets>
                             <ruleset>pmd-ruleset.xml</ruleset>
                         </rulesets>
-                        <targetJdk>${bt.compile.source}</targetJdk>
+                        <targetJdk>${bt.compile.target}</targetJdk>
                         <linkXRef>false</linkXRef>
                         <includeTests>true</includeTests>
                         <verbose>true</verbose>
