@@ -2,6 +2,14 @@
 
 # 21.0.0
 
+## [COMN-341](https://basistech.atlassian.net/browse/COMN-341)
+
+- Update properties:
+    - `bt-adm-version` to 3.0.3
+    - `bt-common-api-version` to 38.0.3
+
+## [COMN-342](https://babelstreet.atlassian.net/browse/COMN-342)
+
 - Rename property `bt.compile.release` to `bt.compile.target`
 - Reintroduce property `bt.compile.source` at 21
 - Update `maven-enforcer-plugin` to require Java version 21
