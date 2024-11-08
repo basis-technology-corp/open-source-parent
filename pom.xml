@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>21.0.0-SNAPSHOT</version>
+    <version>21.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <name>open-source-parent</name>
@@ -110,8 +110,8 @@
         <versions-maven-plugin.version>2.16.2</versions-maven-plugin.version>
         <!-- versions for dependencies -->
         <!-- things we build -->
-        <bt-adm-version>3.0.2</bt-adm-version>
-        <bt-common-api-version>38.0.2</bt-common-api-version>
+        <bt-adm-version>3.0.3</bt-adm-version>
+        <bt-common-api-version>38.0.3</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.37</bt-args4j-version>
         <bt-checkstyle-version>10.19.0</bt-checkstyle-version>
@@ -127,7 +127,7 @@
         <bt-httpcore-version>4.4.16</bt-httpcore-version>
         <bt-httpmime-version>4.5.14</bt-httpmime-version>
         <bt-icu4j-version>74.2</bt-icu4j-version>
-        <bt-jackson-version>2.18.0</bt-jackson-version>
+        <bt-jackson-version>2.17.2</bt-jackson-version>
         <bt-junit-version>4.13.2</bt-junit-version>
         <bt-liblinear-version>2.44</bt-liblinear-version>
         <bt-log4j-version>2.24.1</bt-log4j-version>
