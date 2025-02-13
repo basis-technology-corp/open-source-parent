@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  ~ Copyright 2015-2024 Basis Technology Corp.
+  ~ Copyright 2015-2025 Basis Technology Corp.
   ~
   ~    Licensed under the Apache License, Version 2.0 (the "License");
   ~    you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>21.0.1-SNAPSHOT</version>
+    <version>23.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Basis Technology open source components.</description>
     <name>open-source-parent</name>
@@ -64,8 +64,6 @@
         <buildtools.artifact>open-source-buildtools</buildtools.artifact>
         <buildtools.version>7.0.1</buildtools.version>
         <maven-gpg-plugin.phase>verify</maven-gpg-plugin.phase>
-        <nexus-staging-plugin-internal-nexus-url>https://nexus.basistech.net/nexus/</nexus-staging-plugin-internal-nexus-url>
-        <nexus-staging-plugin-internal-server-id>basistech.repo</nexus-staging-plugin-internal-server-id>
         <nexus-staging-plugin-nexus-url>${nexus-staging-plugin-ossrh-nexus-url}</nexus-staging-plugin-nexus-url>
         <!-- Use new server.  https://issues.sonatype.org/browse/OSSRH-76389 -->
         <nexus-staging-plugin-ossrh-nexus-url>https://s01.oss.sonatype.org/</nexus-staging-plugin-ossrh-nexus-url>
@@ -876,24 +874,6 @@
                                 </goals>
                             </execution>
                         </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <id>internal-release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.sonatype.plugins</groupId>
-                        <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>${nexus-staging-maven-plugin.version}</version>
-                        <extensions>true</extensions>
-                        <configuration>
-                            <serverId>${nexus-staging-plugin-internal-server-id}</serverId>
-                            <nexusUrl>${nexus-staging-plugin-internal-nexus-url}</nexusUrl>
-                            <stagingProfileId>1dd11ca8866422</stagingProfileId>
-                        </configuration>
                     </plugin>
                 </plugins>
             </build>
