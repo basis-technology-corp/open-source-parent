@@ -1,5 +1,25 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 22.0.0
+
+## [COMN-363](https://babelstreet.atlassian.net/browse/COMN-363)
+
+- Update properties:
+    - `bt-checkstyle-version` to 10.21.2
+    - `bt-commons-io-version` to 2.18.0
+    - `bt-guava-version` to 33.4.0-jre
+    - `bt-jackson-version` to 2.18.2
+    - `bt-log4j-version` to 2.24.3
+    - `bt-opencsv-version` to 5.10
+    - `bt-protobuf-version` to 4.29.3
+    - `buildtools.version` to 7.0.1
+    - `cyclonedx-maven-plugin.version` to 2.9.1
+    - `dependency-check-maven.version` to 12.0.2
+    - `dependency-track-maven.version` to 1.9.1
+    - `maven-javadoc-plugin.version` to 3.11.2
+    - `maven-pmd-plugin.version` to 3.26.0
+    - `maven-surefire-plugin.version` to 3.5.2
+
 # 21.0.0
 
 ## [COMN-341](https://basistech.atlassian.net/browse/COMN-341)
