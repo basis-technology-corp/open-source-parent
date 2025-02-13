@@ -1,5 +1,14 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 23.0.0
+
+## [COMN-363](https://babelstreet.atlassian.net/browse/COMN-363)
+
+- Remove `internal-release` profile
+- Remove properties:
+    - `nexus-staging-plugin-internal-nexus-url`
+    - `nexus-staging-plugin-internal-server-id`
+
 # 22.0.0
 
 ## [COMN-363](https://babelstreet.atlassian.net/browse/COMN-363)
