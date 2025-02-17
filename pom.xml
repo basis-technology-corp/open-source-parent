@@ -108,8 +108,8 @@
         <versions-maven-plugin.version>2.16.2</versions-maven-plugin.version>
         <!-- versions for dependencies -->
         <!-- things we build -->
-        <bt-adm-version>3.0.3</bt-adm-version>
-        <bt-common-api-version>38.0.3</bt-common-api-version>
+        <bt-adm-version>3.0.4</bt-adm-version>
+        <bt-common-api-version>38.0.4</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.37</bt-args4j-version>
         <bt-checkstyle-version>10.21.2</bt-checkstyle-version>
@@ -132,7 +132,7 @@
         <bt-opencsv-version>5.10</bt-opencsv-version>
         <bt-protobuf-version>4.29.3</bt-protobuf-version>
         <bt-slf4j-version>1.7.36</bt-slf4j-version>
-        <bt-snakeyaml-version>2.3</bt-snakeyaml-version>
+        <bt-snakeyaml-version>2.4</bt-snakeyaml-version>
         <bt-spotbugs-version>4.8.5</bt-spotbugs-version>
         <bt-stax2-api-version>4.2.2</bt-stax2-api-version>
         <bt-tensorflow-version>1.0.0-rc.1</bt-tensorflow-version>
