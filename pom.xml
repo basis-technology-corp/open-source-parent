@@ -112,7 +112,7 @@
         <bt-common-api-version>38.0.4</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.37</bt-args4j-version>
-        <bt-checkstyle-version>10.21.2</bt-checkstyle-version>
+        <bt-checkstyle-version>10.21.3</bt-checkstyle-version>
         <bt-commons-cli-version>1.9.0</bt-commons-cli-version>
         <bt-commons-compress-version>1.27.1</bt-commons-compress-version>
         <bt-commons-io-version>2.18.0</bt-commons-io-version>
