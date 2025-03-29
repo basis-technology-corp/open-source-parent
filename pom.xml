@@ -118,7 +118,7 @@
         <bt-commons-io-version>2.18.0</bt-commons-io-version>
         <bt-commons-lang3-version>3.17.0</bt-commons-lang3-version>
         <bt-fastutil-version>8.5.15</bt-fastutil-version>
-        <bt-guava-version>33.4.0-jre</bt-guava-version>
+        <bt-guava-version>33.4.5-jre</bt-guava-version>
         <bt-hamcrest-version>3.0</bt-hamcrest-version>
         <bt-httpasyncclient-version>4.1.5</bt-httpasyncclient-version>
         <bt-httpclient-version>4.5.14</bt-httpclient-version>
@@ -130,7 +130,7 @@
         <bt-liblinear-version>2.44</bt-liblinear-version>
         <bt-log4j-version>2.24.3</bt-log4j-version>
         <bt-opencsv-version>5.10</bt-opencsv-version>
-        <bt-protobuf-version>4.30.0</bt-protobuf-version>
+        <bt-protobuf-version>4.30.1</bt-protobuf-version>
         <bt-slf4j-version>1.7.36</bt-slf4j-version>
         <bt-snakeyaml-version>2.4</bt-snakeyaml-version>
         <bt-spotbugs-version>4.8.5</bt-spotbugs-version>
