@@ -9,6 +9,10 @@
     - `nexus-staging-plugin-internal-nexus-url`
     - `nexus-staging-plugin-internal-server-id`
 
+## [COMN-381](https://babelstreet.atlassian.net/browse/COMN-381)
+
+- Remove `org.owasp:dependency-check-maven` plugin
+
 # 22.0.0
 
 ## [COMN-363](https://babelstreet.atlassian.net/browse/COMN-363)
