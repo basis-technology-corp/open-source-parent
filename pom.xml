@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>23.0.0-SNAPSHOT</version>
+    <version>23.0.0</version>
     <packaging>pom</packaging>
     <description>Parent POM for Babel Street Rosette open source components.</description>
     <name>open-source-parent</name>
@@ -44,7 +44,7 @@
         <url>https://github.com/basis-technology-corp/open-source-parent</url>
         <connection>scm:git:git@github.com:basis-technology-corp/open-source-parent.git</connection>
         <developerConnection>scm:git:git@github.com:basis-technology-corp/open-source-parent.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>open-source-parent-23.0.0</tag>
     </scm>
     <developers>
         <developer>
