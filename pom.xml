@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  ~ Copyright 2015-2025 Basis Technology Corp.
+  ~ Copyright 2015-2025 Babel Street Rosette Ltd.
   ~
   ~    Licensed under the Apache License, Version 2.0 (the "License");
   ~    you may not use this file except in compliance with the License.
@@ -18,13 +18,13 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>23.0.0-SNAPSHOT</version>
+    <version>23.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <description>Parent POM for Basis Technology open source components.</description>
+    <description>Parent POM for Babel Street Rosette open source components.</description>
     <name>open-source-parent</name>
     <organization>
-        <name>Basis Technology Corp.</name>
-        <url>http://www.basistech.com</url>
+        <name>Babel Street Rosette Ltd.</name>
+        <url>https://www.babelstreet.com/</url>
     </organization>
     <licenses>
         <license>
@@ -50,9 +50,9 @@
         <developer>
             <id>Katsuya-Tomioka</id>
             <name>Katsuya Tomioka</name>
-            <email>katsuya@basistech.com</email>
-            <organization>Basis Technology Corp.</organization>
-            <organizationUrl>https://www.rosette.com</organizationUrl>
+            <email>KTomioka@babelstreet.com</email>
+            <organization>Babel Street Rosette Ltd.</organization>
+            <organizationUrl>https://www.babelstreet.com/</organizationUrl>
         </developer>
     </developers>
     <properties>
@@ -262,7 +262,7 @@
                                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                             </manifest>
                             <manifestEntries>
-                                <Built-By>Basis Technology Corp.</Built-By>
+                                <Built-By>Babel Street Rosette Ltd.</Built-By>
                                 <Implementation-Build>${buildNumber}-${maven.build.timestamp}</Implementation-Build>
                                 <Implementation-Version>${project.version}</Implementation-Version>
                             </manifestEntries>
@@ -280,7 +280,7 @@
                                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                             </manifest>
                             <manifestEntries>
-                                <Built-By>Basis Technology Corp.</Built-By>
+                                <Built-By>Babel Street Rosette Ltd.</Built-By>
                                 <Implementation-Build>${buildNumber}-${maven.build.timestamp}</Implementation-Build>
                                 <Implementation-Version>${project.version}</Implementation-Version>
                             </manifestEntries>

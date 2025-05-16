@@ -13,6 +13,28 @@
 
 - Remove `org.owasp:dependency-check-maven` plugin
 
+## [COMN-396](https://babelstreet.atlassian.net/browse/COMN-396)
+
+- Update properties:
+    - `bt-adm-version` to 3.0.4
+    - `bt-common-api-version` to 38.0.4
+    - `bt-checkstyle-version` to 10.23.1
+    - `bt-commons-io-version` to 2.19.0
+    - `bt-guava-version` to 33.4.8-jre
+    - `bt-jackson-version` to 2.19.0
+    - `bt-opencsv-version` to 5.11
+    - `bt-protobuf-version` to 4.30.2
+    - `bt-snakeyaml-version` to 2.4
+    - `dependency-track-maven.version` to 1.10.0
+    - `jacoco-maven-plugin.version` to 0.8.13
+    - `maven-clean-plugin.version` to 3.4.1
+    - `maven-compiler-plugin.version` to 3.14.0
+    - `maven-deploy-plugin.version` to 3.1.4
+    - `maven-install-plugin.version` to 3.1.4
+    - `maven-project-info-reports-plugin.version` to 3.9.0
+    - `maven-surefire-plugin.version` to 3.5.3
+- Update references of Basis Technology to Babel Street Rosette
+
 # 22.0.0
 
 ## [COMN-363](https://babelstreet.atlassian.net/browse/COMN-363)
@@ -35,7 +57,7 @@
 
 # 21.0.0
 
-## [COMN-341](https://basistech.atlassian.net/browse/COMN-341)
+## [COMN-341](https://babelstreet.atlassian.net/browse/COMN-341)
 
 - Update properties:
     - `bt-adm-version` to 3.0.3

@@ -1,6 +1,6 @@
 ## open-source-parent
 
-A POM with some common settings for Basis Technology open source
+A POM with some common settings for Babel Street Rosette open source
 components.
 
 ## Release Instructions
