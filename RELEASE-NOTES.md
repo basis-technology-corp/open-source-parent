@@ -1,5 +1,13 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 23.0.1
+
+## [COMN-396](https://babelstreet.atlassian.net/browse/COMN-396)
+
+- Update properties:
+    - `bt-adm-version` to 3.0.6
+    - `bt-common-api-version` to 38.0.6
+
 # 23.0.0
 
 ## [COMN-363](https://babelstreet.atlassian.net/browse/COMN-363)
