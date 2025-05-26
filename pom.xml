@@ -111,7 +111,7 @@
         <bt-common-api-version>38.0.6</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.37</bt-args4j-version>
-        <bt-checkstyle-version>10.23.1</bt-checkstyle-version>
+        <bt-checkstyle-version>10.24.0</bt-checkstyle-version>
         <bt-commons-cli-version>1.9.0</bt-commons-cli-version>
         <bt-commons-compress-version>1.27.1</bt-commons-compress-version>
         <bt-commons-io-version>2.19.0</bt-commons-io-version>
@@ -129,7 +129,7 @@
         <bt-liblinear-version>2.44</bt-liblinear-version>
         <bt-log4j-version>2.24.3</bt-log4j-version>
         <bt-opencsv-version>5.11</bt-opencsv-version>
-        <bt-protobuf-version>4.30.2</bt-protobuf-version>
+        <bt-protobuf-version>4.31.0</bt-protobuf-version>
         <bt-slf4j-version>1.7.36</bt-slf4j-version>
         <bt-snakeyaml-version>2.4</bt-snakeyaml-version>
         <bt-spotbugs-version>4.8.5</bt-spotbugs-version>
