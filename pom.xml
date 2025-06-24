@@ -111,12 +111,12 @@
         <bt-common-api-version>38.0.6</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.37</bt-args4j-version>
-        <bt-checkstyle-version>10.25.0</bt-checkstyle-version>
+        <bt-checkstyle-version>10.25.1</bt-checkstyle-version>
         <bt-commons-cli-version>1.9.0</bt-commons-cli-version>
         <bt-commons-compress-version>1.27.1</bt-commons-compress-version>
         <bt-commons-io-version>2.19.0</bt-commons-io-version>
         <bt-commons-lang3-version>3.17.0</bt-commons-lang3-version>
-        <bt-fastutil-version>8.5.15</bt-fastutil-version>
+        <bt-fastutil-version>8.5.16</bt-fastutil-version>
         <bt-guava-version>33.4.8-jre</bt-guava-version>
         <bt-hamcrest-version>3.0</bt-hamcrest-version>
         <bt-httpasyncclient-version>4.1.5</bt-httpasyncclient-version>
@@ -127,8 +127,8 @@
         <bt-jackson-version>2.19.1</bt-jackson-version>
         <bt-junit-version>4.13.2</bt-junit-version>
         <bt-liblinear-version>2.44</bt-liblinear-version>
-        <bt-log4j-version>2.24.3</bt-log4j-version>
-        <bt-opencsv-version>5.11.1</bt-opencsv-version>
+        <bt-log4j-version>2.25.0</bt-log4j-version>
+        <bt-opencsv-version>5.11.2</bt-opencsv-version>
         <bt-protobuf-version>4.31.1</bt-protobuf-version>
         <bt-slf4j-version>1.7.36</bt-slf4j-version>
         <bt-snakeyaml-version>2.4</bt-snakeyaml-version>
