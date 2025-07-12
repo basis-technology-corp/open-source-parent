@@ -115,7 +115,7 @@
         <bt-commons-cli-version>1.9.0</bt-commons-cli-version>
         <bt-commons-compress-version>1.27.1</bt-commons-compress-version>
         <bt-commons-io-version>2.19.0</bt-commons-io-version>
-        <bt-commons-lang3-version>3.17.0</bt-commons-lang3-version>
+        <bt-commons-lang3-version>3.18.0</bt-commons-lang3-version>
         <bt-fastutil-version>8.5.16</bt-fastutil-version>
         <bt-guava-version>33.4.8-jre</bt-guava-version>
         <bt-hamcrest-version>3.0</bt-hamcrest-version>
