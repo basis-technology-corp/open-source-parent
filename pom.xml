@@ -128,7 +128,7 @@
         <bt-junit-version>4.13.2</bt-junit-version>
         <bt-liblinear-version>2.44</bt-liblinear-version>
         <bt-log4j-version>2.25.1</bt-log4j-version>
-        <bt-opencsv-version>5.11.2</bt-opencsv-version>
+        <bt-opencsv-version>5.12.0</bt-opencsv-version>
         <bt-protobuf-version>4.31.1</bt-protobuf-version>
         <bt-slf4j-version>1.7.36</bt-slf4j-version>
         <bt-snakeyaml-version>2.4</bt-snakeyaml-version>
