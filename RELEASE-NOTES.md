@@ -1,5 +1,11 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 24.0.1
+
+## [COMN-415](https://babelstreet.atlassian.net/browse/COMN-415)
+
+- Update `bt-checkstyle-version` to 11.0.0
+
 # 24.0.0
 
 ## [COMN-415](https://babelstreet.atlassian.net/browse/COMN-415)
