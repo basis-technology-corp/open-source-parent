@@ -1,5 +1,38 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 24.0.0
+
+## [COMN-415](https://babelstreet.atlassian.net/browse/COMN-415)
+
+- Add `central-publishing-maven-plugin` plugin
+- Add `central-publishing-maven-plugin.version` property at 0.8.0
+- Remove `org.sonatype.plugins:nexus-staging-maven-plugin` plugin
+- Remove properties:
+    - `nexus-staging-maven-plugin.version`
+    - `nexus-staging-plugin-nexus-url`
+    - `nexus-staging-plugin-ossrh-nexus-url`
+    - `nexus-staging-plugin-ossrh-server-id`
+    - `nexus-staging-plugin-server-id`
+    - `nexus-staging-plugin-skip-staging`
+- Update properties:
+    - `bt-checkstyle-version` to 11.0.0
+    - `bt-commons-cli-version` to 1.10.0
+    - `bt-commons-compress-version` to 1.28.0
+    - `bt-commons-io-version` to 2.20.0
+    - `bt-commons-lang3-version` to 3.18.0
+    - `bt-fastutil-version` to 8.5.16
+    - `bt-jackson-version` to 2.19.2
+    - `bt-log4j-version` to 2.25.1
+    - `bt-opencsv-version` to 5.12.0
+    - `bt-protobuf-version` to 4.31.1
+    - `bt-woodstox-version` to 7.1.1
+    - `dependency-track-maven.version` to 1.10.2
+    - `exec-maven-plugin.version` to 3.5.1
+    - `maven-clean-plugin.version` to 3.5.0
+    - `maven-enforcer-plugin.version` to 3.6.1
+    - `maven-gpg-plugin.version` to 3.2.8
+    - `maven-pmd-plugin.version` to 3.27.0
+
 # 23.0.1
 
 ## [COMN-396](https://babelstreet.atlassian.net/browse/COMN-396)

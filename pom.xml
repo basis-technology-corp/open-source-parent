@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>23.0.2-SNAPSHOT</version>
+    <version>24.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Babel Street Rosette open source components.</description>
     <name>open-source-parent</name>
@@ -34,12 +34,6 @@
     </licenses>
     <inceptionYear>2014</inceptionYear>
     <url>https://github.com/basis-technology-corp/open-source-parent</url>
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
     <scm>
         <url>https://github.com/basis-technology-corp/open-source-parent</url>
         <connection>scm:git:git@github.com:basis-technology-corp/open-source-parent.git</connection>
@@ -64,16 +58,11 @@
         <buildtools.artifact>open-source-buildtools</buildtools.artifact>
         <buildtools.version>7.0.1</buildtools.version>
         <maven-gpg-plugin.phase>verify</maven-gpg-plugin.phase>
-        <nexus-staging-plugin-nexus-url>${nexus-staging-plugin-ossrh-nexus-url}</nexus-staging-plugin-nexus-url>
-        <!-- Use new server.  https://issues.sonatype.org/browse/OSSRH-76389 -->
-        <nexus-staging-plugin-ossrh-nexus-url>https://s01.oss.sonatype.org/</nexus-staging-plugin-ossrh-nexus-url>
-        <nexus-staging-plugin-ossrh-server-id>ossrh-releases</nexus-staging-plugin-ossrh-server-id>
-        <nexus-staging-plugin-server-id>${nexus-staging-plugin-ossrh-server-id}</nexus-staging-plugin-server-id>
-        <nexus-staging-plugin-skip-staging>false</nexus-staging-plugin-skip-staging>
         <release-profile>release</release-profile>
         <skip-dependency-convergence>false</skip-dependency-convergence>
         <!-- Consolidating maven plugin versions here. -->
         <buildnumber-maven-plugin.version>3.2.1</buildnumber-maven-plugin.version>
+        <central-publishing-maven-plugin.version>0.8.0</central-publishing-maven-plugin.version>
         <cyclonedx-maven-plugin.version>2.9.1</cyclonedx-maven-plugin.version>
         <dependency-track-maven.version>1.10.2</dependency-track-maven.version>
         <exec-maven-plugin.version>3.5.1</exec-maven-plugin.version>
@@ -102,7 +91,6 @@
         <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
         <maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
         <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
-        <nexus-staging-maven-plugin.version>1.7.0</nexus-staging-maven-plugin.version>
         <spotbugs-maven-plugin.version>4.8.5.0</spotbugs-maven-plugin.version>
         <versions-maven-plugin.version>2.16.2</versions-maven-plugin.version>
         <!-- versions for dependencies -->
@@ -208,8 +196,8 @@
                 <artifactId>buildnumber-maven-plugin</artifactId>
             </plugin>
             <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
             </plugin>
         </plugins>
         <pluginManagement>
@@ -220,36 +208,6 @@
                     <version>${maven-scm-publish-plugin.version}</version>
                     <configuration>
                         <scmBranch>gh-pages</scmBranch>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>buildnumber-maven-plugin</artifactId>
-                    <version>${buildnumber-maven-plugin.version}</version>
-                    <executions>
-                        <execution>
-                            <phase>validate</phase>
-                            <goals>
-                                <goal>create</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                    <configuration>
-                        <doCheck>false</doCheck>
-                        <shortRevisionLength>8</shortRevisionLength>
-                    </configuration>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.sonatype.plugins</groupId>
-                    <artifactId>nexus-staging-maven-plugin</artifactId>
-                    <version>${nexus-staging-maven-plugin.version}</version>
-                    <extensions>true</extensions>
-                    <configuration>
-                        <serverId>${nexus-staging-plugin-server-id}</serverId>
-                        <nexusUrl>${nexus-staging-plugin-nexus-url}</nexusUrl>
-                        <skipStaging>${nexus-staging-plugin-skip-staging}</skipStaging>
-                        <autoReleaseAfterClose>false</autoReleaseAfterClose>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -320,11 +278,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-install-plugin</artifactId>
                     <version>${maven-install-plugin.version}</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>exec-maven-plugin</artifactId>
-                    <version>${exec-maven-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -507,6 +460,28 @@
                     </dependencies>
                 </plugin>
                 <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>buildnumber-maven-plugin</artifactId>
+                    <version>${buildnumber-maven-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <phase>validate</phase>
+                            <goals>
+                                <goal>create</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <doCheck>false</doCheck>
+                        <shortRevisionLength>8</shortRevisionLength>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>${exec-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
                     <groupId>org.cyclonedx</groupId>
                     <artifactId>cyclonedx-maven-plugin</artifactId>
                     <version>${cyclonedx-maven-plugin.version}</version>
@@ -518,6 +493,15 @@
                             </goals>
                         </execution>
                     </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.sonatype.central</groupId>
+                    <artifactId>central-publishing-maven-plugin</artifactId>
+                    <version>${central-publishing-maven-plugin.version}</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <publishingServerId>central</publishingServerId>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>io.github.pmckeown</groupId>
