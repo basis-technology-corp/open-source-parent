@@ -4,6 +4,16 @@
 
 ## [COMN-415](https://babelstreet.atlassian.net/browse/COMN-415)
 
+- Add `central-publishing-maven-plugin` plugin
+- Add `central-publishing-maven-plugin.version` property at 0.8.0
+- Remove `org.sonatype.plugins:nexus-staging-maven-plugin` plugin
+- Remove properties:
+    - `nexus-staging-maven-plugin.version`
+    - `nexus-staging-plugin-nexus-url`
+    - `nexus-staging-plugin-ossrh-nexus-url`
+    - `nexus-staging-plugin-ossrh-server-id`
+    - `nexus-staging-plugin-server-id`
+    - `nexus-staging-plugin-skip-staging`
 - Update properties:
     - `bt-checkstyle-version` to 11.0.0
     - `bt-commons-cli-version` to 1.10.0
