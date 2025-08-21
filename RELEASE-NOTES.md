@@ -4,7 +4,10 @@
 
 ## [COMN-415](https://babelstreet.atlassian.net/browse/COMN-415)
 
-- Update `bt-checkstyle-version` to 11.0.0
+- Update properties:
+    - `bt-adm-version` to 3.0.7
+    - `bt-checkstyle-version` to 11.0.0
+    - `bt-common-api-version` to 38.0.7
 
 # 24.0.0
 
