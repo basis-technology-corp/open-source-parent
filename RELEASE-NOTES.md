@@ -1,5 +1,15 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 24.0.1
+
+## [COMN-415](https://babelstreet.atlassian.net/browse/COMN-415)
+
+- Automatically publish to Maven Central Publisher Portal
+- Update properties:
+    - `bt-adm-version` to 3.0.7
+    - `bt-checkstyle-version` to 11.0.0
+    - `bt-common-api-version` to 38.0.7
+
 # 24.0.0
 
 ## [COMN-415](https://babelstreet.atlassian.net/browse/COMN-415)
