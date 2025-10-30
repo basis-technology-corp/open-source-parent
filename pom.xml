@@ -118,7 +118,7 @@
         <bt-log4j-version>2.25.2</bt-log4j-version>
         <bt-opencsv-version>5.12.0</bt-opencsv-version>
         <bt-protobuf-version>4.33.0</bt-protobuf-version>
-        <bt-slf4j-version>1.7.36</bt-slf4j-version>
+        <bt-slf4j-version>2.0.17</bt-slf4j-version>
         <bt-snakeyaml-version>2.5</bt-snakeyaml-version>
         <bt-spotbugs-version>4.8.5</bt-spotbugs-version>
         <bt-stax2-api-version>4.2.2</bt-stax2-api-version>
@@ -612,7 +612,7 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-slf4j-impl</artifactId>
+                <artifactId>log4j-slf4j2-impl</artifactId>
                 <version>${bt-log4j-version}</version>
             </dependency>
             <dependency>
