@@ -1,5 +1,37 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 25.0.0
+
+## [COMN-419](https://babelstreet.atlassian.net/browse/COMN-419)
+
+- Update properties:
+    - `bt-adm-version` to 3.0.8
+    - `bt-checkstyle-version` to 12.1.1
+    - `bt-common-api-version` to 38.0.8
+    - `bt-commons-lang3-version` to 3.19.0
+    - `bt-fastutil-version` to 8.5.18
+    - `bt-guava-version` to 33.5.0-jre
+    - `bt-jackson-version` to 2.20.1
+    - `bt-log4j-version` to 2.25.2
+    - `bt-protobuf-version` to 4.33.0
+    - `bt-slf4j-version` to 2.0.17
+    - `bt-snakeyaml-version` to 2.5
+    - `bt-tensorflow-version` to 1.1.0
+    - `central-publishing-maven-plugin.version` to 0.9.0
+    - `exec-maven-plugin.version` to 3.6.2
+    - `jacoco-maven-plugin.version` to 0.8.14
+    - `maven-antrun-plugin.version` to 3.2.0
+    - `maven-compiler-plugin.version` to 3.14.1
+    - `maven-dependency-plugin.version` to 3.9.0
+    - `maven-enforcer-plugin.version` to 3.6.2
+    - `maven-javadoc-plugin.version` to 3.12.0
+    - `maven-pmd-plugin.version` to 3.28.0
+    - `maven-scm-plugin.version` to 2.2.1
+    - `maven-shade-plugin.version` to 3.6.1
+    - `maven-surefire-plugin.version` to 3.5.4
+    - `maven-war-plugin.version` to 3.5.0
+- Use [Jackson BOM](https://github.com/FasterXML/jackson-bom)
+
 # 24.0.1
 
 ## [COMN-415](https://babelstreet.atlassian.net/browse/COMN-415)
