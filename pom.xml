@@ -102,7 +102,7 @@
         <bt-checkstyle-version>12.1.1</bt-checkstyle-version>
         <bt-commons-cli-version>1.10.0</bt-commons-cli-version>
         <bt-commons-compress-version>1.28.0</bt-commons-compress-version>
-        <bt-commons-io-version>2.20.0</bt-commons-io-version>
+        <bt-commons-io-version>2.21.0</bt-commons-io-version>
         <bt-commons-lang3-version>3.19.0</bt-commons-lang3-version>
         <bt-fastutil-version>8.5.18</bt-fastutil-version>
         <bt-guava-version>33.5.0-jre</bt-guava-version>
