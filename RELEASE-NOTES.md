@@ -1,5 +1,13 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 26.0.0
+
+## [COMN-422](https://babelstreet.atlassian.net/browse/COMN-422)
+
+- Update properties:
+    - `bt.compile.source` to 25
+    - `bt.compile.target` to 17
+
 # 25.0.0
 
 ## [COMN-419](https://babelstreet.atlassian.net/browse/COMN-419)
