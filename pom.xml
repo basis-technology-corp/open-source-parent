@@ -62,7 +62,7 @@
         <skip-dependency-convergence>false</skip-dependency-convergence>
         <!-- Consolidating maven plugin versions here. -->
         <buildnumber-maven-plugin.version>3.2.1</buildnumber-maven-plugin.version>
-        <central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
+        <central-publishing-maven-plugin.version>0.10.0</central-publishing-maven-plugin.version>
         <cyclonedx-maven-plugin.version>2.9.1</cyclonedx-maven-plugin.version>
         <dependency-track-maven.version>1.10.2</dependency-track-maven.version>
         <exec-maven-plugin.version>3.6.3</exec-maven-plugin.version>
@@ -117,7 +117,7 @@
         <bt-liblinear-version>2.44</bt-liblinear-version>
         <bt-log4j-version>2.25.3</bt-log4j-version>
         <bt-opencsv-version>5.12.0</bt-opencsv-version>
-        <bt-protobuf-version>4.33.2</bt-protobuf-version>
+        <bt-protobuf-version>4.33.3</bt-protobuf-version>
         <bt-slf4j-version>2.0.17</bt-slf4j-version>
         <bt-snakeyaml-version>2.5</bt-snakeyaml-version>
         <bt-spotbugs-version>4.8.5</bt-spotbugs-version>
