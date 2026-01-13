@@ -7,6 +7,7 @@
 - Update properties:
     - `bt.compile.source` to 25
     - `bt.compile.target` to 17
+    - `spotbugs-maven-plugin.version` to 4.9.8.2
 
 # 25.0.0
 
