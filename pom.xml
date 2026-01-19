@@ -61,7 +61,7 @@
         <release-profile>release</release-profile>
         <skip-dependency-convergence>false</skip-dependency-convergence>
         <!-- Consolidating maven plugin versions here. -->
-        <buildnumber-maven-plugin.version>3.2.1</buildnumber-maven-plugin.version>
+        <buildnumber-maven-plugin.version>3.3.0</buildnumber-maven-plugin.version>
         <central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
         <cyclonedx-maven-plugin.version>2.9.1</cyclonedx-maven-plugin.version>
         <dependency-track-maven.version>1.10.2</dependency-track-maven.version>
