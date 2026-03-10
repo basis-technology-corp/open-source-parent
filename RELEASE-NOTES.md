@@ -5,7 +5,9 @@
 ## [BX-69329](https://babelstreet.atlassian.net/browse/BX-69329)
 
 - Update properties:
+    - `bt-adm-version` to 3.0.9
     - `bt-checkstyle-version` to 13.3.0
+    - `bt-common-api-version` to 38.0.9
     - `bt-jackson-version` to 2.21.1
     - `bt-protobuf-version` to 4.34.0
     - `bt-snakeyaml-version` to 2.6
