@@ -1,5 +1,24 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 26.0.1
+
+## [BX-69329](https://babelstreet.atlassian.net/browse/BX-69329)
+
+- Update properties:
+    - `bt-adm-version` to 3.0.9
+    - `bt-checkstyle-version` to 13.3.0
+    - `bt-common-api-version` to 38.0.9
+    - `bt-jackson-version` to 2.21.1
+    - `bt-protobuf-version` to 4.34.0
+    - `bt-snakeyaml-version` to 2.6
+    - `buildnumber-maven-plugin.version` to 3.3.0
+    - `dependency-track-maven.version` to 1.11.0
+    - `maven-compiler-plugin.version` to 3.15.0
+    - `maven-dependency-plugin.version` to 3.10.0
+    - `maven-resources-plugin.version` to 3.5.0
+    - `maven-shade-plugin.version` to 3.6.2
+    - `maven-surefire-plugin.version` to 3.5.5
+
 # 26.0.0
 
 ## [COMN-422](https://babelstreet.atlassian.net/browse/COMN-422)
