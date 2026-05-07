@@ -56,7 +56,7 @@
         <bt.compile.source>25</bt.compile.source>
         <bt.compile.target>17</bt.compile.target>
         <buildtools.artifact>open-source-buildtools</buildtools.artifact>
-        <buildtools.version>7.0.1</buildtools.version>
+        <buildtools.version>7.1.0</buildtools.version>
         <maven-gpg-plugin.phase>verify</maven-gpg-plugin.phase>
         <release-profile>release</release-profile>
         <skip-dependency-convergence>false</skip-dependency-convergence>
