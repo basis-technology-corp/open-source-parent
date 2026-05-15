@@ -1,5 +1,21 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 27.0.0
+
+## [BX-71911](https://babelstreet.atlassian.net/browse/BX-71911)
+
+- Update properties:
+    - `bt-adm-version` to 3.0.10
+    - `bt-checkstyle-version` 13.4.2
+    - `bt-common-api-version` to 38.0.10
+    - `bt-commons-io-version` to 2.22.0
+    - `bt-guava-version` 33.6.0-jre
+    - `bt-jackson-version` 2.21.3
+    - `bt-log4j-version` 2.26.0
+    - `bt-protobuf-version` 4.34.1
+    - `bt-stax2-api-version` 4.3.0
+    - `buildtools.version` to 7.1.0
+
 # 26.0.1
 
 ## [BX-69329](https://babelstreet.atlassian.net/browse/BX-69329)
