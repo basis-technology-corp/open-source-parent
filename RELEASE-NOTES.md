@@ -1,5 +1,12 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 28.0.1
+
+## [BX-76889](https://babelstreet.atlassian.net/browse/BX-76889)
+
+- Update property:
+    - `bt-jackson-version` to 2.22.3
+
 # 28.0.0
 
 ## [BX-75273](https://babelstreet.atlassian.net/browse/BX-75273)
