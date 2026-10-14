@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>open-source-parent</artifactId>
     <groupId>com.basistech</groupId>
-    <version>28.0.2-SNAPSHOT</version>
+    <version>29.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>Parent POM for Babel Street Rosette open source components.</description>
     <name>open-source-parent</name>
@@ -54,7 +54,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <bt.compile.source>25</bt.compile.source>
-        <bt.compile.target>17</bt.compile.target>
+        <bt.compile.target>11</bt.compile.target>
         <buildtools.artifact>open-source-buildtools</buildtools.artifact>
         <buildtools.version>7.1.0</buildtools.version>
         <maven-gpg-plugin.phase>verify</maven-gpg-plugin.phase>

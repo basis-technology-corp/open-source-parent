@@ -1,5 +1,25 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 29.0.0
+
+## [RLPNC-9224](https://babelstreet.atlassian.net/browse/RLPNC-9224)
+
+- Update properties:
+    - `buildnumber-maven-plugin.version` to 3.3.1
+    - `bt-commons-lang3-version` to 3.21.0
+    - `bt-guava-version` to 33.7.2-jre
+    - `bt-protobuf-version` to 4.36.2
+    - `bt-slf4j-version` to 2.0.20
+    - `bt-snakeyaml-version` to 2.7
+    - `bt-stax2-api-version` to 4.3.1
+    - `bt-woodstox-version>` to 7.3.0
+    - `bt.compile.target` to 11
+    - `exec-maven-plugin.version` to 3.6.4
+    - `maven-compiler-plugin.version` to 3.16.0
+    - `maven-deploy-plugin.version` to 3.2.0
+    - `maven-install-plugin.version` to 3.2.0
+    - `maven-surefire-plugin.version` to 3.6.0
+
 # 28.0.1
 
 ## [BX-76889](https://babelstreet.atlassian.net/browse/BX-76889)
