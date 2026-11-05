@@ -1,6 +1,20 @@
 # Release Notes for com.basistech:open-source-parent #
 
+# 29.0.1
+
+## [BX-77990](https://babelstreet.atlassian.net/browse/BX-77990)
+
+- Update properties:
+    - `bt-adm-version` to 3.0.12
+    - `bt-common-api-version` to 38.0.12
+
 # 29.0.0
+
+## [BX-77990](https://babelstreet.atlassian.net/browse/BX-77990)
+    - `bt-jackson-version` to 2.22.4
+    - `jacoco-maven-plugin.version` to 0.8.16
+    - `maven-enforcer-plugin.version` to 3.7.0
+    - `maven-surefire-plugin.version` to 3.6.1
 
 ## [RLPNC-9224](https://babelstreet.atlassian.net/browse/RLPNC-9224)
 
@@ -20,7 +34,6 @@
     - `maven-compiler-plugin.version` to 3.16.0
     - `maven-deploy-plugin.version` to 3.2.0
     - `maven-install-plugin.version` to 3.2.0
-    - `maven-surefire-plugin.version` to 3.6.0
 
 # 28.0.1
 
