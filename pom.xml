@@ -99,13 +99,13 @@
         <bt-common-api-version>38.0.12</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.37</bt-args4j-version>
-        <bt-checkstyle-version>14.3.0</bt-checkstyle-version>
+        <bt-checkstyle-version>14.4.0</bt-checkstyle-version>
         <bt-commons-cli-version>1.11.0</bt-commons-cli-version>
         <bt-commons-compress-version>1.28.0</bt-commons-compress-version>
         <bt-commons-io-version>2.22.0</bt-commons-io-version>
         <bt-commons-lang3-version>3.21.0</bt-commons-lang3-version>
         <bt-fastutil-version>8.5.19</bt-fastutil-version>
-        <bt-guava-version>33.7.2-jre</bt-guava-version>
+        <bt-guava-version>33.8.0-jre</bt-guava-version>
         <bt-hamcrest-version>3.0</bt-hamcrest-version>
         <bt-httpasyncclient-version>4.1.5</bt-httpasyncclient-version>
         <bt-httpclient-version>4.5.14</bt-httpclient-version>
