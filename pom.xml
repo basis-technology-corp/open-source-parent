@@ -99,20 +99,20 @@
         <bt-common-api-version>38.0.12</bt-common-api-version>
         <!-- things we consume -->
         <bt-args4j-version>2.37</bt-args4j-version>
-        <bt-checkstyle-version>14.3.0</bt-checkstyle-version>
+        <bt-checkstyle-version>14.4.0</bt-checkstyle-version>
         <bt-commons-cli-version>1.11.0</bt-commons-cli-version>
         <bt-commons-compress-version>1.28.0</bt-commons-compress-version>
         <bt-commons-io-version>2.22.0</bt-commons-io-version>
-        <bt-commons-lang3-version>3.21.0</bt-commons-lang3-version>
+        <bt-commons-lang3-version>3.22.0</bt-commons-lang3-version>
         <bt-fastutil-version>8.5.19</bt-fastutil-version>
-        <bt-guava-version>33.7.2-jre</bt-guava-version>
+        <bt-guava-version>33.8.0-jre</bt-guava-version>
         <bt-hamcrest-version>3.0</bt-hamcrest-version>
         <bt-httpasyncclient-version>4.1.5</bt-httpasyncclient-version>
         <bt-httpclient-version>4.5.14</bt-httpclient-version>
         <bt-httpcore-version>4.4.16</bt-httpcore-version>
         <bt-httpmime-version>4.5.14</bt-httpmime-version>
         <bt-icu4j-version>78.3</bt-icu4j-version>
-        <bt-jackson-version>2.22.4</bt-jackson-version>
+        <bt-jackson-version>2.23.0</bt-jackson-version>
         <bt-junit-version>4.13.2</bt-junit-version>
         <bt-liblinear-version>2.44</bt-liblinear-version>
         <bt-log4j-version>2.26.1</bt-log4j-version>
